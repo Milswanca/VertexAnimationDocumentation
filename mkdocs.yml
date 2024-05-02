@@ -1,0 +1,10 @@
+site_name: Dev Docs
+theme:
+  name: material
+  logo: 
+
+nav:
+    - Home: index.md
+
+markdown_extensions:
+  - attr_list
