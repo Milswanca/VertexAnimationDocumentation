@@ -1,6 +1,7 @@
-site_name: Vertex Animation With Crowd Tools
+site_name: Vertex Animation Docs
 theme:
   name: material
+  logo: assets\icon_CrowdEditor_40x.png
 
 nav:
     - Home: index.md
