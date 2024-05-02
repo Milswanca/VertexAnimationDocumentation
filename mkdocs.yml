@@ -1,10 +1,11 @@
-site_name: Dev Docs
-theme:
+site_name: Vertex Animation With Crowd Tools
+theme: readthedocs
   name: material
   logo: 
 
 nav:
     - Home: index.md
+    - Quick Start Guide: quick-start.md
 
 markdown_extensions:
   - attr_list
