@@ -1,7 +1,6 @@
 site_name: Vertex Animation With Crowd Tools
-theme: readthedocs
+theme:
   name: material
-  logo: 
 
 nav:
     - Home: index.md
