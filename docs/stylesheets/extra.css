@@ -18,3 +18,31 @@
 .md-tabs {
     background-image: linear-gradient(to bottom, #34495e, #2c3e50) !important;
 }
+
+/* Reduce body text size and adjust line height */
+body {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+}
+
+/* Reduce header sizes */
+h1 {
+    font-size: 24px !important;
+}
+
+h2 {
+    font-size: 20px !important;
+}
+
+h3 {
+    font-size: 18px !important;
+}
+
+h4, h5, h6 {
+    font-size: 16px !important;
+}
+
+/* Adjust content width for better readability */
+.md-grid {
+    max-width: 64rem !important;
+}

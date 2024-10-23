@@ -11,7 +11,7 @@ extra_css:
   - stylesheets/extra.css
 
 nav:
-    - Home: index.md
+    - About the Plugin: index.md
     - Quick Start Guide: quick-start.md
 
 markdown_extensions:
