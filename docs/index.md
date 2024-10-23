@@ -1,10 +1,5 @@
-#
 ## Overview
 
-The Unreal Vertex Animation Toolset Plugin empowers developers by providing a complete solution for converting 
-their current Skeletal Mesh-based characters into high-performance Vertex Animation-based Instanced Static Meshes. 
+The UE5 Vertex Animation Toolset plugin is a solution for converting Skeletal Mesh-based characters into Vertex Animation-based Instanced Static Meshes. 
 
-With this toolset, you can effortlessly create expansive scenes populated with 
-numerous NPC characters while maintaining a smooth and consistent frame rate.
-
-test
+This toolset enables the creation of scenes with multiple NPC characters while optimizing frame rate performance.
