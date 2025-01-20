@@ -1,48 +1,205 @@
+/* Global variables */
+:root {
+    --doc-line-height: 1.5 !important;
+    --doc-letter-spacing: 0.02em !important;
+}
+
+/* Header styling */
 .md-header__title,
 .md-header__title .md-header__topic,
 .md-header__title .md-header__topic:first-child {
-    font-weight: 400 !important;
-    font-variation-settings: 'wght' 400 !important;
+    font-weight: 500 !important;
+    font-variation-settings: 'wght' 500 !important;
 }
 
 .md-header {
-    background-color: #2c3e50 !important;
+    background-color: #37474f !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15) !important;
 }
 
 .md-tabs {
-    background-color: #2c3e50 !important;
+    background-color: #37474f !important;
 }
 
-/* Add a subtle gradient to enhance the color */
+/* Header gradient */
 .md-header,
 .md-tabs {
-    background-image: linear-gradient(to bottom, #34495e, #2c3e50) !important;
+    background-image: linear-gradient(to bottom, #455a64, #37474f) !important;
 }
 
-/* Reduce body text size and adjust line height */
-body {
-    font-size: 14px !important;
-    line-height: 1.6 !important;
+/* Enhanced text contrast and readability */
+[data-md-color-scheme="slate"] {
+    --md-default-fg-color: rgba(255, 255, 255, 0.87) !important;
+    --md-default-fg-color--light: rgba(255, 255, 255, 0.87) !important;
+    --md-typeset-color: rgba(255, 255, 255, 0.87) !important;
+    background-color: #263238 !important;
 }
 
-/* Reduce header sizes */
-h1 {
+/* Active section indicator */
+.md-nav__item--active {
+    border-left: 2px solid #81d4fa !important;
+    margin-left: -0.6rem !important;
+    padding-left: 0.4rem !important;
+    background: none !important;
+}
+
+/* Remove dark backgrounds from navigation */
+.md-nav {
+    background: none !important;
+}
+
+.md-nav__title {
+    background: none !important;
+    color: #eceff1 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+}
+
+.md-nav__item {
+    background: none !important;
+}
+
+/* Adjust navigation title spacing */
+.md-nav__title {
+    margin: 0 0 1em !important;
+    font-size: 1.1em !important;
+    line-height: var(--doc-line-height);
+}
+
+/* Body text styling */
+.md-typeset {
+    font-size: .7rem !important;
+    line-height: var(--doc-line-height);
+}
+
+.md-typeset p {
+    margin: 0.3em 0 !important;
+    letter-spacing: var(--doc-letter-spacing);
+    line-height: var(--doc-line-height);
+}
+
+/* Enhanced header hierarchy */
+.md-typeset h1 {
+    font-size: 28px !important;
+    color: #eceff1 !important;
+    font-weight: 600 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    padding-bottom: 0.3em !important;
+    margin-top: 1em !important;
+    margin-bottom: 0.5em !important;
+    line-height: var(--doc-line-height);
+}
+
+.md-typeset h2 {
     font-size: 24px !important;
+    color: #eceff1 !important;
+    font-weight: 500 !important;
+    margin-top: 1em !important;
+    margin-bottom: 0.5em !important;
+    line-height: var(--doc-line-height);
 }
 
-h2 {
+.md-typeset h3 {
     font-size: 20px !important;
+    color: #eceff1 !important;
+    margin-top: 1em !important;
+    margin-bottom: 0.5em !important;
+    line-height: var(--doc-line-height);
 }
 
-h3 {
+.md-typeset h4, .md-typeset h5, .md-typeset h6 {
     font-size: 18px !important;
+    color: #eceff1 !important;
+    margin-top: 1em !important;
+    margin-bottom: 0.5em !important;
+    line-height: var(--doc-line-height);
 }
 
-h4, h5, h6 {
-    font-size: 16px !important;
+/* Links with better contrast */
+.md-content a {
+    color: #81d4fa !important;
+}
+
+.md-content a:hover {
+    color: #b3e5fc !important;
+    text-decoration: underline !important;
+}
+
+/* Code blocks with better contrast */
+.md-typeset code {
+    background-color: rgba(236, 239, 241, 0.05) !important;
+    color: #ffab91 !important;
+    line-height: var(--doc-line-height);
 }
 
 /* Adjust content width for better readability */
 .md-grid {
     max-width: 64rem !important;
+}
+
+/* Navigation with better contrast */
+.md-nav__link {
+    color: rgba(255, 255, 255, 0.75) !important;
+    line-height: var(--doc-line-height);
+}
+
+.md-nav__link:hover {
+    color: #eceff1 !important;
+}
+
+.md-nav__item--active > .md-nav__link {
+    color: #81d4fa !important;
+}
+
+/* List formatting improvements */
+.md-typeset ul {
+    margin-left: 1.2em !important;
+    margin-top: 0.2em !important;
+    margin-bottom: 0.2em !important;
+}
+
+.md-typeset ul li {
+    margin-bottom: 0.2em !important;
+    padding-left: 0.5em !important;
+    position: relative !important;
+    letter-spacing: var(--doc-letter-spacing);
+    line-height: var(--doc-line-height);
+}
+
+.md-typeset ul li:last-child {
+    margin-bottom: 0.5em !important;
+}
+
+/* Ensure list items with strong text break properly */
+.md-typeset ul li strong {
+    display: inline-block !important;
+}
+
+/* Add spacing after italicized questions */
+.md-typeset em {
+    display: block !important;
+    margin: 0.5em 0 !important;
+    line-height: var(--doc-line-height);
+}
+
+/* Nested content indentation */
+.md-typeset ul li p {
+    margin: 0.2em 0 0 0 !important;
+    line-height: var(--doc-line-height);
+    letter-spacing: var(--doc-letter-spacing);
+}
+
+/* List item description spacing */
+.md-typeset ul li p + p {
+    margin-top: 0.2em !important;
+}
+
+/* Adjust list item markers */
+.md-typeset ul li::marker {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Hide footer */
+.md-footer-meta {
+    display: none !important;
 }

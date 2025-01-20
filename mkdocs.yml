@@ -1,7 +1,7 @@
 site_name: Vertex Animation Toolset Docs
 theme:
   name: material
-  logo: assets\icon_CrowdEditor_40x.png
+  logo: assets/icon_CrowdEditor_40x.png
   palette:
     scheme: slate
     primary: blue grey
