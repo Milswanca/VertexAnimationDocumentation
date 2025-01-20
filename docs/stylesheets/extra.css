@@ -1,7 +1,18 @@
 /* Global variables */
 :root {
     --doc-line-height: 1.5 !important;
-    --doc-letter-spacing: 0.02em !important;
+    --doc-letter-spacing: 0 !important;
+    --md-text-font: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif !important;
+    --md-code-font: "Cascadia Code", Consolas, "Courier New", monospace !important;
+}
+
+/* Apply fonts globally */
+body {
+    font-family: var(--md-text-font);
+}
+
+code {
+    font-family: var(--md-code-font);
 }
 
 /* Header styling */
@@ -73,46 +84,48 @@
 }
 
 .md-typeset p {
-    margin: 0.3em 0 !important;
+    margin: 0.7em 0 !important;
     letter-spacing: var(--doc-letter-spacing);
     line-height: var(--doc-line-height);
 }
 
 /* Enhanced header hierarchy */
 .md-typeset h1 {
-    font-size: 28px !important;
+    font-size: 24px !important;
     color: #eceff1 !important;
-    font-weight: 600 !important;
+    font-weight: 400 !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
     padding-bottom: 0.3em !important;
     margin-top: 1em !important;
-    margin-bottom: 0.5em !important;
-    line-height: var(--doc-line-height);
+    margin-bottom: 0.6em !important;
+    line-height: 1.3 !important;
 }
 
 .md-typeset h2 {
-    font-size: 24px !important;
+    font-size: 20px !important;
     color: #eceff1 !important;
-    font-weight: 500 !important;
+    font-weight: 400 !important;
     margin-top: 1em !important;
-    margin-bottom: 0.5em !important;
-    line-height: var(--doc-line-height);
+    margin-bottom: 0.6em !important;
+    line-height: 1.3 !important;
 }
 
 .md-typeset h3 {
-    font-size: 20px !important;
+    font-size: 18px !important;
     color: #eceff1 !important;
+    font-weight: 400 !important;
     margin-top: 1em !important;
-    margin-bottom: 0.5em !important;
-    line-height: var(--doc-line-height);
+    margin-bottom: 0.6em !important;
+    line-height: 1.3 !important;
 }
 
 .md-typeset h4, .md-typeset h5, .md-typeset h6 {
-    font-size: 18px !important;
+    font-size: 16px !important;
     color: #eceff1 !important;
+    font-weight: 400 !important;
     margin-top: 1em !important;
-    margin-bottom: 0.5em !important;
-    line-height: var(--doc-line-height);
+    margin-bottom: 0.6em !important;
+    line-height: 1.3 !important;
 }
 
 /* Links with better contrast */
@@ -130,6 +143,9 @@
     background-color: rgba(236, 239, 241, 0.05) !important;
     color: #ffab91 !important;
     line-height: var(--doc-line-height);
+    padding: 0.2em 0.4em !important;
+    border-radius: 3px !important;
+    margin: 0 0.2em !important;
 }
 
 /* Adjust content width for better readability */
@@ -154,12 +170,12 @@
 /* List formatting improvements */
 .md-typeset ul {
     margin-left: 1.2em !important;
-    margin-top: 0.2em !important;
-    margin-bottom: 0.2em !important;
+    margin-top: 0.5em !important;
+    margin-bottom: 0.5em !important;
 }
 
 .md-typeset ul li {
-    margin-bottom: 0.2em !important;
+    margin-bottom: 0.4em !important;
     padding-left: 0.5em !important;
     position: relative !important;
     letter-spacing: var(--doc-letter-spacing);
@@ -167,7 +183,7 @@
 }
 
 .md-typeset ul li:last-child {
-    margin-bottom: 0.5em !important;
+    margin-bottom: 0 !important;
 }
 
 /* Ensure list items with strong text break properly */
