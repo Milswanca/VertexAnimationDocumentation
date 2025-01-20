@@ -1,6 +1,6 @@
 /* Global variables */
 :root {
-    --doc-line-height: 1.5 !important;
+    --doc-line-height: 1.4 !important;
     --doc-letter-spacing: 0 !important;
     --md-text-font: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif !important;
     --md-code-font: "Cascadia Code", Consolas, "Courier New", monospace !important;
@@ -43,7 +43,7 @@ code {
     --md-default-fg-color: rgba(255, 255, 255, 0.87) !important;
     --md-default-fg-color--light: rgba(255, 255, 255, 0.87) !important;
     --md-typeset-color: rgba(255, 255, 255, 0.87) !important;
-    background-color: #263238 !important;
+    background: linear-gradient(145deg, #1e2a3a 0%, #263238 100%) fixed !important;
 }
 
 /* Active section indicator */
@@ -140,12 +140,13 @@ code {
 
 /* Code blocks with better contrast */
 .md-typeset code {
-    background-color: rgba(236, 239, 241, 0.05) !important;
+    background-color: rgba(29, 42, 58, 0.6) !important;
     color: #ffab91 !important;
     line-height: var(--doc-line-height);
     padding: 0.2em 0.4em !important;
     border-radius: 3px !important;
     margin: 0 0.2em !important;
+    backdrop-filter: blur(8px) !important;
 }
 
 /* Adjust content width for better readability */
@@ -157,6 +158,8 @@ code {
 .md-nav__link {
     color: rgba(255, 255, 255, 0.75) !important;
     line-height: var(--doc-line-height);
+    padding: 0.2em 0 !important;
+    font-size: 0.8rem !important;
 }
 
 .md-nav__link:hover {
@@ -165,6 +168,11 @@ code {
 
 .md-nav__item--active > .md-nav__link {
     color: #81d4fa !important;
+    font-weight: 500 !important;
+}
+
+.md-nav__item {
+    padding: 0.2em 0 !important;
 }
 
 /* List formatting improvements */
