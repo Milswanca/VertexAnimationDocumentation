@@ -20,12 +20,14 @@ nav:
         - Vertex Anim Lists: vertex-anim-lists.md
         - Animation Logic: animation-logic.md
     - Components:
-        - Vertex Anim Mesh Component: vertex-anim-mesh-component.md
-        - Vertex Anim Instanced Mesh Component: vertex-anim-instanced-mesh-component.md
+        - VA Mesh Component: vertex-anim-mesh-component.md
+        - VA Instanced Mesh Component: vertex-anim-instanced-mesh-component.md
     - Crowd Tools:
-        - Editor Mode: crowd-tools-editor-mode.md
-        - Navigation Tools: crowd-tools-navigation.md
+        - Overview: crowd-tools-editor-mode.md
         - Crowd Brushes: crowd-brushes.md
+        - Paint Tool: crowd-tools-paint.md
+        - Grid Tool: crowd-tools-grid.md
+        - Single Placement: crowd-tools-single.md
     - Troubleshooting: troubleshooting.md
 
 markdown_extensions:
