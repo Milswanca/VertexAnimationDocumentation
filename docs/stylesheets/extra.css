@@ -75,19 +75,14 @@ code {
     font-variation-settings: 'wght' 500 !important;
 }
 
+/* Header styling */
 .md-header {
-    background-color: #37474f !important;
     box-shadow: 0 2px 12px rgba(0,0,0,0.2) !important;
 }
 
-.md-tabs {
-    background-color: #37474f !important;
-}
-
-/* Header gradient */
 .md-header,
 .md-tabs {
-    background-image: linear-gradient(to bottom, #4f6875, #37474f) !important;
+    background-color: #4f6875 !important;
     border-bottom: 1px solid rgba(129, 212, 250, 0.1) !important;
 }
 
