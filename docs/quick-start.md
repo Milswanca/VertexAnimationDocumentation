@@ -50,3 +50,24 @@ When resolving material errors, you'll have two options:
 After completing these steps, you'll have a new Vertex Animation Asset in your content browser.
 
    ![Vertex Animation Asset](assets/quick_4.png)
+
+### 7. Using Your Vertex Animation Asset
+
+After creating your Vertex Animation Asset, you have three options for using it in your project:
+
+- **In the Crowd Tools Editor Mode**  
+  Use this mode for managing multiple characters and creating crowd simulations with an intuitive editor interface.
+
+- **In a Vertex Anim Mesh Component**  
+  Perfect for adding vertex animation to a single actor in your scene.
+
+- **In a Vertex Anim Instanced Mesh Component**  
+  Ideal for efficiently rendering multiple instances of the same vertex-animated mesh.
+
+## Next Steps
+
+Choose your implementation path:
+
+- [Learn about Crowd Tools Editor Mode](crowd-tools-editor-mode.md)
+- [Use the Vertex Anim Mesh Component](vertex-anim-mesh-component.md)
+- [Implement Instanced Mesh Components](vertex-anim-instanced-mesh-component.md)

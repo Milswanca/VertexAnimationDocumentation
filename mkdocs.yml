@@ -13,6 +13,11 @@ extra_css:
 nav:
     - About the Plugin: index.md
     - Quick Start Guide: quick-start.md
+    - Components:
+        - Vertex Anim Mesh Component: vertex-anim-mesh-component.md
+        - Vertex Anim Instanced Mesh Component: vertex-anim-instanced-mesh-component.md
+    - Crowd Tools:
+        - Editor Mode: crowd-tools-editor-mode.md
 
 markdown_extensions:
   - attr_list
