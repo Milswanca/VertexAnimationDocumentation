@@ -4,7 +4,7 @@ The Vertex Animation Toolset converts Skeletal Mesh characters into Vertex Anima
 
 > **Important**: This plugin requires Unreal Engine 5.4 or above.
 
-![Crowd Cheering](assets/crowd_09.jpg)
+![Crowd Cheering](assets/Crowd_09.jpg)
 
 ## Overview
 
