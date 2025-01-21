@@ -17,6 +17,7 @@ nav:
         - Vertex Anim Asset: vertex-animation-asset.md
         - Vertex Asset Editor: asset-editor.md
     - Animation System:
+        - VA Animation Player: va-animation-player.md
         - Vertex Anim Lists: vertex-anim-lists.md
         - Animation Logic: animation-logic.md
     - Components:

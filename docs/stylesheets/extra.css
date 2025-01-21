@@ -1,6 +1,6 @@
 /* Global variables */
 :root {
-    --doc-line-height: 1.4 !important;
+    --doc-line-height: 1.6 !important;
     --doc-letter-spacing: 0 !important;
     --md-text-font: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif !important;
     --md-code-font: "Cascadia Code", Consolas, "Courier New", monospace !important;
@@ -153,9 +153,9 @@ code {
     font-weight: 400 !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
     padding-bottom: 0.3em !important;
-    margin-top: 1em !important;
+    margin-top: 0.2em !important;
     margin-bottom: 0.6em !important;
-    line-height: 1.3 !important;
+    line-height: 1.4 !important;
 }
 
 .md-typeset h2 {
