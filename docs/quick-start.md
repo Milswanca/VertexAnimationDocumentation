@@ -47,7 +47,7 @@ When resolving material errors, you'll have two options:
      Directly modifies your existing materials
 
 ### 6. Final Result
-After completing these steps, you'll have a new Vertex Animation Asset in your content browser.
+After completing these steps, you'll have a new VA Asset Collection in your content browser.
 
    ![Vertex Animation Asset](assets/quick_4.png)
 

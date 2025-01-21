@@ -4,6 +4,8 @@ The Vertex Animation Toolset converts Skeletal Mesh characters into Vertex Anima
 
 > **Important**: This plugin requires Unreal Engine 5.4 or above.
 
+![Crowd Cheering](assets/crowd_09.jpg)
+
 ## Overview
 
 This plugin addresses performance bottlenecks in scenes with multiple animated characters by converting skeletal animations to vertex animations. The conversion process preserves animation quality while reducing CPU overhead and enabling efficient GPU-based rendering through mesh instancing.
@@ -58,12 +60,6 @@ The plugin is most effective for:
 - Compatible with UE 5.4 and above
 - Flexible animation management
 - Integrated editor toolset
-- Simple setup process
 
-### Scalability
-- Supports various scene sizes
-- Efficient instance management
-- Adaptable to project requirements
-- Performance scales with hardware capabilities
 
 Check out the [Quick Start Guide](quick-start.md) to begin implementing the Vertex Animation Toolset in your project.

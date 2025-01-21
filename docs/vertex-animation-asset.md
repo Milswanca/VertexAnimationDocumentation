@@ -1,43 +1,62 @@
-# Vertex Animation Asset
+# VA Asset Collection
 
-The Vertex Animation Asset is the core data container that powers the vertex animation system. This asset type stores all the necessary data to play vertex-based animations on your meshes.
+The VA Asset Collection is the core asset type in the Vertex Animation Toolset that manages and stores all data required for vertex animations. It serves as a container that holds meshes, animations, and their associated data.
 
 ## Overview
-The Vertex Animation Asset contains processed animation data converted from traditional skeletal animations into a vertex-based format. This conversion allows for efficient playback and rendering of animations without the overhead of skeletal computations.
 
-## Data Structure
+A VA Asset Collection contains:
+- Source skeletal meshes and their build settings
+- Built vertex animation meshes
+- Animation data stored in textures
+- Material configurations
+- Per-mesh custom data
+
+## Components
 
 ### Mesh Data
-- Vertex position maps
-- Normal maps
-- Tangent information
-- UV coordinates
-- Mesh bounds data
+- Stores converted static meshes optimized for vertex animation
+- Maintains UV channel information
+- Contains bone data for skeletal mesh animations
+- Tracks vertex counts and bounds
+- Stores material configurations and overrides
 
 ### Animation Data
-- Frame sequences
-- Animation timing data
-- Transition information
-- Playback parameters
-- Compression settings
+- Position and rotation/normal texture data
+- Animation frame data
+- Animation bounds
+- Frame rates and timing information
+- Animation sequence metadata
 
-### Material Data
-- Material mappings
-- Texture coordinates
-- Vertex animation material parameters
-- Rendering properties
+### Material Settings
+- Source material references
+- Material build configurations
+- Material parameter mappings
+- Custom material data per mesh
 
-## Performance Characteristics
-- Memory usage patterns
-- Rendering efficiency
-- Loading and streaming behavior
-- Instance rendering optimizations
+## Editor Features
 
-## Asset Management
-- Storage considerations
-- Data compression
-- Memory footprint
-- Optimization techniques
+The asset provides editor functionality for:
+- Converting skeletal meshes to vertex animation format
+- Building and managing animation textures
+- Tracking build states and hashes for incremental updates
+- Material configuration and validation
+- Source asset management
 
-## Usage
-Coming soon...
+## Technical Details
+
+### Storage Format
+- Animations are stored as texture-based vertex data
+- Positions and rotations/normals are split into separate textures
+- Each mesh maintains its own vertex layout and UV configuration
+- Build hashes track asset changes and dependencies
+
+### Performance Considerations
+- Optimized for runtime texture sampling
+- Efficient memory usage through texture-based storage
+- Minimal runtime overhead
+- Built data is preprocessed for optimal playback
+
+## See Also
+- [VA Mesh Component](vertex-anim-mesh-component.md) - Component for playing vertex animations
+- [VA Animation Player](va-animation-player.md) - Animation playback system
+- [Quick Start Guide](quick-start.md) - How to create and configure assets
