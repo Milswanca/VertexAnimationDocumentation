@@ -1,4 +1,4 @@
-# VA Animation Player
+# UVAAnimationPlayer
 
 The VA Animation Player is the core animation system that powers all vertex animation playback in the Vertex Animation Toolset. You can access it through any VA Mesh Component using the "Get Anim Player" node in Blueprints.
 
@@ -16,22 +16,23 @@ To access the Animation Player in Blueprints:
 
 ![Animation Control Nodes](assets/animation-control.png)
 
-- **Play Animation**
-  ```
-  Play Animation
-  ├─ Animation Index: Integer (which animation to play)
-  ├─ Start Position: Float (0-1, where in animation to start)
-  ├─ Blend Duration: Float (seconds to blend from current to new animation)
-  └─ Loop: Boolean (whether to loop the animation)
-  ```
+**Play Animation**
+```
+Play Animation
+├─ Animation Index: Integer (which animation to play)
+├─ Start Position: Float (0-1, where in animation to start)
+├─ Blend Duration: Float (seconds to blend from current to new animation)
+└─ Loop: Boolean (whether to loop the animation)
+```
 
-- **Play Animation List**
-  ```
-  Play Animation List
-  └─ Animation List Index: Integer (which list to play)
-  ```
+**Play Animation List**
+```
+Play Animation List
+└─ Animation List Index: Integer (which list to play)
+```
 
-- **Simple Controls**
+**Simple Controls**
+
   - Stop Animation
   - Pause Animation
   - Resume Animation
@@ -160,6 +161,7 @@ The Animation Player provides several events you can bind to in Blueprints:
 - Leverage events for animation-driven gameplay logic
 
 ## See Also
-- [VA Mesh Component](vertex-anim-mesh-component.md)
-- [Animation Logic](animation-logic.md)
-- [Vertex Anim Lists](vertex-anim-lists.md)
+
+- [VA Lists](vertex-anim-lists.md)
+- [VA Logic](animation-logic.md)
+

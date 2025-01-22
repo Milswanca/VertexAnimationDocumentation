@@ -13,7 +13,7 @@ This button reconstructs your mesh and materials. Use this after making any adju
 For Bone VA Asset Collections that contain multiple meshes, this dropdown menu allows you to switch between different meshes in the preview window. This is particularly useful when working with collections that include variations of the same character or object.
 
 ### 3. Reapply Custom Data
-This feature enables you to inject custom float data into your instanced VA mesh. By modifying these values, you can create visual variations between instances, ensuring each character or object appears unique in your scene.
+This feature enables you to inject custom float data into your instanced VA mesh. By modifying these values, you can create visual variations between instances, ensuring each character or object appears unique in your scene. For more details, see the [Per Instance Custom Data](#per-instance-custom-data) section below.
 
 ### 4. Details Panel
 The right-side panel contains crucial settings divided into several categories:
@@ -90,3 +90,8 @@ The Per Instance Custom Data system allows you to inject randomized or controlle
 When the instance is spawned, each custom float parameter will generate a value within its specified range. These values can then be accessed within your material graphs to create unique variations for each instance.
 
 > **Note:** Remember to click the Rebuild Asset button after making changes.
+
+## See Also
+
+- [Quick Start Guide](quick-start.md) - How to create and configure VA Asset Collections
+- [VA Animation Player](va-animation-player.md) - Understanding how to play and control vertex animations
