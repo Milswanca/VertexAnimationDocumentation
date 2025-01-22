@@ -1,0 +1,1308 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../animation-logic/">
+      
+      
+        <link rel="next" href="../vertex-anim-instanced-mesh-component/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>VA Mesh Component - Vertex Animation Toolset Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.bcfcd587.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="blue-grey">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#vertex-anim-mesh-component" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Vertex Animation Toolset Docs" class="md-header__button md-logo" aria-label="Vertex Animation Toolset Docs" data-md-component="logo">
+      
+  <img src="../assets/icon_CrowdEditor_40x.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Vertex Animation Toolset Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              VA Mesh Component
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Vertex Animation Toolset Docs" class="md-nav__button md-logo" aria-label="Vertex Animation Toolset Docs" data-md-component="logo">
+      
+  <img src="../assets/icon_CrowdEditor_40x.png" alt="logo">
+
+    </a>
+    Vertex Animation Toolset Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About the Plugin
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quick-start/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quick Start Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Assets
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Assets
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../va-asset-collection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VA Asset Collection
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../va-asset-editor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VA Asset Editor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Animation System
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Animation System
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../va-animation-player/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VA Player
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vertex-anim-lists/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VA Lists
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../animation-logic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VA Logic
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Components
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Components
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    VA Mesh Component
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    VA Mesh Component
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#adding-to-your-actor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding to Your Actor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Setup
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blueprint-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Blueprint Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Blueprint Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#asset-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Asset Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#animation-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      Animation Control
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#animation-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      Animation State
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#material-custom-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Material &amp; Custom Data
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-blueprints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Blueprints
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example Blueprints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-animation-playback" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Animation Playback
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#animation-with-blending" class="md-nav__link">
+    <span class="md-ellipsis">
+      Animation with Blending
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tips &amp; Best Practices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tips & Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#asset-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Asset Setup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#animation-control_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Animation Control
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Issues
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#no-mesh-visible" class="md-nav__link">
+    <span class="md-ellipsis">
+      No Mesh Visible
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#animation-not-playing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Animation Not Playing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#material-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Material Issues
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#events" class="md-nav__link">
+    <span class="md-ellipsis">
+      Events
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vertex-anim-instanced-mesh-component/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VA Instanced Mesh Component
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Crowd Tools
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Crowd Tools
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../crowd-tools-editor-mode/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../crowd-brushes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Crowd Brushes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../crowd-tools-paint/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Paint Tool
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../crowd-tools-grid/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Grid Tool
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../crowd-tools-single/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Single Placement
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#adding-to-your-actor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding to Your Actor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Setup
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blueprint-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Blueprint Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Blueprint Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#asset-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Asset Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#animation-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      Animation Control
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#animation-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      Animation State
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#material-custom-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Material &amp; Custom Data
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-blueprints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Blueprints
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example Blueprints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-animation-playback" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Animation Playback
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#animation-with-blending" class="md-nav__link">
+    <span class="md-ellipsis">
+      Animation with Blending
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tips &amp; Best Practices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tips & Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#asset-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Asset Setup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#animation-control_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Animation Control
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Issues
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#no-mesh-visible" class="md-nav__link">
+    <span class="md-ellipsis">
+      No Mesh Visible
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#animation-not-playing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Animation Not Playing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#material-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Material Issues
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#events" class="md-nav__link">
+    <span class="md-ellipsis">
+      Events
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="vertex-anim-mesh-component">Vertex Anim Mesh Component</h1>
+<p>The Vertex Anim Mesh Component (VAMeshComponent) is a specialized component that enables vertex animation playback in your Blueprints. It can be added to any Actor to play vertex animations created with the Vertex Animation Toolset.</p>
+<h2 id="adding-to-your-actor">Adding to Your Actor</h2>
+<ol>
+<li>In your Actor Blueprint, click "Add Component"</li>
+<li>Search for "VA Mesh Component"</li>
+<li>Add it to your Actor</li>
+</ol>
+<h2 id="basic-setup">Basic Setup</h2>
+<ol>
+<li>Select the VA Mesh Component in your Components panel</li>
+<li>In the Details panel:</li>
+<li>Set the "Vertex Animation Asset" to your VAT asset</li>
+<li>Set the "Vertex Animation Mesh Index" if your asset has multiple meshes</li>
+</ol>
+<h2 id="blueprint-functions">Blueprint Functions</h2>
+<h3 id="asset-management">Asset Management</h3>
+<ul>
+<li><strong>Set Vertex Animation Asset</strong>: Change the VAT asset being used</li>
+<li><strong>Get Vertex Animation Asset</strong>: Get the current VAT asset</li>
+<li><strong>Set Vertex Animation Mesh Index</strong>: Switch to a different mesh in the asset</li>
+<li><strong>Get Vertex Animation Mesh Index</strong>: Get current mesh index</li>
+</ul>
+<h3 id="animation-control">Animation Control</h3>
+<p>Through the Animation Player (Get Anim Player node):
+- <strong>Play Animation</strong>: Start playing a specific animation
+- <strong>Stop</strong>: Stop the current animation
+- <strong>Pause</strong>: Pause the current animation
+- <strong>Resume</strong>: Resume a paused animation
+- <strong>Set Play Rate</strong>: Change animation speed
+- <strong>Play Animation By Name</strong>: Play an animation using its name
+- <strong>Set Loop Animation</strong>: Enable/disable animation looping</p>
+<h3 id="animation-state">Animation State</h3>
+<ul>
+<li><strong>Is Playing</strong>: Check if an animation is currently playing</li>
+<li><strong>Is Paused</strong>: Check if the animation is paused</li>
+<li><strong>Get Current Animation</strong>: Get the index of the playing animation</li>
+<li><strong>Get Animation Progress</strong>: Get current animation progress (0-1)</li>
+<li><strong>Get Current Time</strong>: Get current animation time in seconds</li>
+</ul>
+<h3 id="material-custom-data">Material &amp; Custom Data</h3>
+<ul>
+<li><strong>Reapply Custom Data</strong>: Update custom vertex data</li>
+<li><strong>Refresh Material Values</strong>: Force update of material parameters</li>
+</ul>
+<h2 id="example-blueprints">Example Blueprints</h2>
+<h3 id="basic-animation-playback">Basic Animation Playback</h3>
+<pre><code>Event BeginPlay
+└─► Get Anim Player
+    └─► Play Animation
+        - Animation Index: 0
+        - Loop: True
+</code></pre>
+<h3 id="animation-with-blending">Animation with Blending</h3>
+<pre><code>Event Action Input
+└─► Get Anim Player
+    └─► Play Animation
+        - Animation Index: 1
+        - Blend Duration: 0.5
+        - Loop: False
+</code></pre>
+<h2 id="tips-best-practices">Tips &amp; Best Practices</h2>
+<h3 id="asset-setup">Asset Setup</h3>
+<ul>
+<li>Assign your VAT asset in the component details</li>
+<li>Verify the correct mesh index is selected</li>
+</ul>
+<h3 id="animation-control_1">Animation Control</h3>
+<ul>
+<li>Use the Animation Player for all playback control</li>
+<li>Store animation indices as variables for easy reference</li>
+<li>Use animation names when possible for better readability</li>
+</ul>
+<h3 id="performance">Performance</h3>
+<ul>
+<li>Avoid updating material parameters manually</li>
+<li>Use the built-in blending system instead of manual blending</li>
+<li>Consider using animation lists for organized animation management</li>
+</ul>
+<h2 id="common-issues">Common Issues</h2>
+<h3 id="no-mesh-visible">No Mesh Visible</h3>
+<ul>
+<li>Check if VAT asset is assigned</li>
+<li>Verify mesh index is valid</li>
+<li>Ensure materials are properly set up</li>
+</ul>
+<h3 id="animation-not-playing">Animation Not Playing</h3>
+<ul>
+<li>Confirm animation index is valid</li>
+<li>Check if Animation Player is properly initialized</li>
+<li>Verify animation is not paused</li>
+</ul>
+<h3 id="material-issues">Material Issues</h3>
+<ul>
+<li>Make sure materials are compatible with VAT</li>
+<li>Check if dynamic materials are generating correctly</li>
+<li>Use Reapply Asset Materials if materials are missing</li>
+</ul>
+<h2 id="events">Events</h2>
+<p>The component provides several events you can bind to:
+- <strong>On Vertex Animation Asset Changed</strong>: Called when the asset is changed
+- <strong>On Animation Finished</strong>: Triggered when an animation completes
+- <strong>On Animation Started</strong>: Fired when an animation begins playing</p>
+<p>Use these events to coordinate animation logic with other game systems.</p>
+<blockquote>
+<p><strong>Note</strong>: This component is designed to be easily used in Blueprints while providing powerful vertex animation capabilities. Most common use cases can be handled entirely through Blueprint functions without needing to write C++ code.</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+    
+  </body>
+</html>
