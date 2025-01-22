@@ -38,7 +38,7 @@ A VA Asset Collection contains:
 
 ## Editor Features
 
-A custom editor window is available for working with VA Asset Collections. See the [Vertex Asset Editor](asset-editor.md) page for more information.
+A custom editor window is available for working with VA Asset Collections. See the [VA Asset Editor](va-asset-editor.md) page for more information.
 
 ![VA Asset Collection](assets/vacollect_01.jpg){width="70%" style="margin-top: 10px;"}
 

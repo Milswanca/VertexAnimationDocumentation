@@ -15,7 +15,7 @@ nav:
     - Quick Start Guide: quick-start.md
     - Assets:
         - VA Asset Collection: va-asset-collection.md
-        - Vertex Asset Editor: asset-editor.md
+        - VA Asset Editor: va-asset-editor.md
     - Animation System:
         - VA Animation Player: va-animation-player.md
         - Vertex Anim Lists: vertex-anim-lists.md
