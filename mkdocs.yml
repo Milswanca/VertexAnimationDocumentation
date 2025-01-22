@@ -14,7 +14,7 @@ nav:
     - About the Plugin: index.md
     - Quick Start Guide: quick-start.md
     - Assets:
-        - VA Asset Collection: vertex-animation-asset.md
+        - VA Asset Collection: va-asset-collection.md
         - Vertex Asset Editor: asset-editor.md
     - Animation System:
         - VA Animation Player: va-animation-player.md

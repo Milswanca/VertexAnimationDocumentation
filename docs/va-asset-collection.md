@@ -2,9 +2,12 @@
 
 The VA Asset Collection is the core asset type in the Vertex Animation Toolset that manages and stores all data required for vertex animations. It serves as a container that holds meshes, animations, and their associated data.
 
+
+
 ## Overview
 
 A VA Asset Collection contains:
+
 - Source skeletal meshes and their build settings
 - Built vertex animation meshes
 - Animation data stored in textures
@@ -35,12 +38,9 @@ A VA Asset Collection contains:
 
 ## Editor Features
 
-The asset provides editor functionality for:
-- Converting skeletal meshes to vertex animation format
-- Building and managing animation textures
-- Tracking build states and hashes for incremental updates
-- Material configuration and validation
-- Source asset management
+A custom editor window is available for working with VA Asset Collections. See the [Vertex Asset Editor](asset-editor.md) page for more information.
+
+![VA Asset Collection](assets/vacollect_01.jpg){width="70%" style="margin-top: 10px;"}
 
 ## Technical Details
 

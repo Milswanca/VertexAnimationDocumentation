@@ -19,7 +19,7 @@ Consider these trade-offs:
    - For optimizing material costs: Use **Vertex Animation**
 
 ### 2. Select Animations
-After choosing your animation type, you'll see a window displaying all compatible animations for your mesh. Select the animations you want to include in your Vertex Animation Asset.
+After choosing your animation type, you'll see a window displaying all compatible animations for your mesh. Select the animations you want to include in your [VA Asset Collection](va-asset-collection.md).
 
    ![Animation Selection](assets/quick_1.png)
 
@@ -28,7 +28,7 @@ After choosing your animation type, you'll see a window displaying all compatibl
    - Click "Create Asset" when you're satisfied with your selection
 
 ### 3. Save Your Asset
-Choose a location in your content browser to save the new Vertex Animation Asset.
+Choose a location in your content browser to save the new [VA Asset Collection](va-asset-collection.md).
 
 ### 4. Material Adjustment
 Since this is a Vertex Animation system, your materials will need to be modified. A window will appear showing any material errors that need to be resolved.
@@ -47,16 +47,16 @@ When resolving material errors, you'll have two options:
      Directly modifies your existing materials
 
 ### 6. Final Result
-After completing these steps, you'll have a new VA Asset Collection in your content browser.
+After completing these steps, you'll have a new [VA Asset Collection](va-asset-collection.md) in your content browser.
 
-   ![Vertex Animation Asset](assets/quick_4.png)
+   ![VA Asset Collection](assets/quick_4.png)
 
-### 7. Using Your Vertex Animation Asset
+### 7. Using Your VA Asset Collection
 
-After creating your Vertex Animation Asset, you have three options for using it in your project:
+After creating your [VA Asset Collection](va-asset-collection.md), you have three options for using it in your project:
 
 - **In the Crowd Tools Editor Mode**  
-  Use this mode for managing multiple characters and creating crowd simulations with an intuitive editor interface.
+  Use this mode for easy placement of crowd characters with an intuitive editor interface.
 
 - **In a Vertex Anim Mesh Component**  
   Perfect for adding vertex animation to a single actor in your scene.

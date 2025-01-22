@@ -1,6 +1,6 @@
 # Vertex Animation Toolset for UE5
 
-The Vertex Animation Toolset converts Skeletal Mesh characters into Vertex Animation-based Instanced Static Meshes, significantly improving performance when rendering multiple animated characters in Unreal Engine 5.
+The Vertex Animation Toolset converts Skeletal Mesh characters into Vertex Animation-based Static Meshes, significantly improving performance when rendering multiple animated characters.
 
 > **Important**: This plugin requires Unreal Engine 5.4 or above.
 
@@ -43,6 +43,7 @@ This plugin addresses performance bottlenecks in scenes with multiple animated c
 ## Use Cases
 
 The plugin is most effective for:
+
 - Dense urban environments with background NPCs
 - Large-scale battle sequences
 - Games requiring numerous background characters
@@ -56,7 +57,7 @@ The plugin is most effective for:
 - Optimized memory footprint
 - Streamlined rendering pipeline
 
-### Development Benefits
+### Development
 - Compatible with UE 5.4 and above
 - Flexible animation management
 - Integrated editor toolset
