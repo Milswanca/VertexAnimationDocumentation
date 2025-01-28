@@ -25,6 +25,7 @@ nav:
         - VA Instanced Mesh Component: vertex-anim-instanced-mesh-component.md
     - Crowd Tools:
         - Overview: crowd-tools-editor-mode.md
+        - Keyboard Shortcuts: crowd-tools-keyboard-shortcuts.md
         - Crowd Brushes: crowd-brushes.md
         - Paint Tool: crowd-tools-paint.md
         - Grid Tool: crowd-tools-grid.md

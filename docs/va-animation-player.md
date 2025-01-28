@@ -6,7 +6,7 @@ The VA Animation Player is the core animation system that powers all vertex anim
 
 To access the Animation Player in Blueprints:
 
-1. Get a reference to your VA Mesh Component
+1. Get a reference to your [UVAMeshComponent](vertex-anim-mesh-component.md) or [UVAInstancedMeshComponent](vertex-anim-instanced-mesh-component.md)
 2. Call the "Get Anim Player" function
 3. Use the returned Animation Player reference for playback control
 
@@ -48,6 +48,7 @@ Play Animation List
 ### State Information
 
 Get current animation state:
+
 - Get Current Animation
 - Get Animation List
 - Get Play Rate
@@ -61,29 +62,7 @@ Get current animation state:
 
 ## Animation Lists
 
-Animation Lists help you organize and control sequences of animations. The Animation Player supports two types of lists:
-
-### Sequence List
-Perfect for animations that should play in order (like walk cycles):
-
-```
-Create Animation List (Sequence)
-├─ Random Start Animation: false  // Start from beginning or random animation
-├─ Random Start Position: false   // Start from beginning or random position
-├─ Pause On Finish: false        // Stop or loop when complete
-└─ Animations: [Walk, Run, Jump] // Plays in order
-```
-
-### Random Shuffle List
-Great for variety in idle animations or background characters:
-
-```
-Create Animation List (Random Shuffle)
-├─ Random Start Position: true         // Start at random point in animation
-├─ Remove From Pool When Played: true  // Don't repeat until all played
-├─ Pause On Finish: false             // Stop or loop when all played
-└─ Animations: [Idle1, Idle2, Idle3]  // Plays in random order
-```
+Animation Lists help you organize and control sequences of animations.
 
 ## Blueprint Examples
 

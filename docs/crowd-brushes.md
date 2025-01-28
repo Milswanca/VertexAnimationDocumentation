@@ -1,32 +1,54 @@
 # Crowd Brushes
 
-Crowd Brushes are powerful tools that control how crowd elements are placed and manipulated in your scene. Understanding brush settings is crucial for achieving desired crowd distributions and behaviors.
+Tools for controlling how crowd elements are placed and configured in your scene. Brushes define instance properties, animation settings, and placement rules for creating diverse and natural-looking crowds.
 
-## Brush Settings
+![Brush Overview](assets/crowd_brush_overview.jpg){width="70%" style="margin-top: 10px; margin-bottom: 5px;"}
 
-### Core Settings
-- Brush Size
-- Brush Strength
-- Brush Falloff
-- Density Control
+## Creating Brushes
 
-### Distribution Settings
-- Spacing
-- Scatter
-- Random Rotation
-- Scale Variation
+### Direct Addition
+- Click "+ Mesh/Brush Asset" in Crowd Editor
+- Select your vertex animation mesh asset
 
-### Placement Rules
-- Surface Alignment
-- Height Offset
-- Collision Handling
-- Boundary Constraints
+### Drag and Drop
+- Drag assets to "Drop Your Assets Here" area
+- Configure settings in the brush panel
+
+![Add Brush](assets/crowd_add_brush.jpg){width="70%" style="margin-top: 10px; margin-bottom: 5px;"}
+
+## Core Settings
+
+### Paint Settings
+- Mesh Index selection
+- Shadow casting options
+
+### Animation
+- Per-instance animation data
+- Sequence configuration
+- Start position/animation randomization
+
+### Placement
+- Density and spacing control
+- Surface alignment options
+- Position and rotation settings
+- Scale adjustments
+
+## Distribution
+
+### Basic Controls
+- Instance spacing
+- Random scatter
+- Rotation variation
+- Scale randomization
 
 ### Advanced Options
-- Pattern Generation
-- Group Behaviors
-- Custom Distribution Rules
-- Performance Settings
+- Pattern generation
+- Group behaviors
+- Custom distribution rules
+- Performance optimization
 
-## Usage
-Coming soon...
+## Read More
+
+- [Crowd Tools Editor Mode](crowd-tools-editor-mode.md) - Main editor interface
+- [VA Asset Collection](va-asset-collection.md) - Animation asset management
+- [Animation Logic](animation-logic.md) - Custom animation behaviors

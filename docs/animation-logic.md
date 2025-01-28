@@ -73,16 +73,4 @@ Animation Completed
 └── Play Next
 ```
 
-## Tips
-
-1. **Performance**
-   - Keep logic simple
-   - Batch operations
-   - Cache values
-
-2. **Debug**
-   - Print states
-   - Use breakpoints
-   - Visualize data
-
 For list management, see [VA Lists](vertex-anim-lists.md).

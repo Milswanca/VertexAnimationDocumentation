@@ -39,16 +39,4 @@ SetOwningComponent(Component)
 GetOwningComponent()
 ```
 
-## Best Practices
-
-1. **Organization**
-   - Group related animations
-   - Use clear naming conventions
-   - Keep lists focused and modular
-
-2. **Performance**
-   - Minimize list count
-   - Clean up unused lists
-   - Use appropriate update frequencies
-
 For implementation details, see [Animation Logic](animation-logic.md).
