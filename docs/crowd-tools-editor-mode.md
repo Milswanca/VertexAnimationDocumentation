@@ -16,7 +16,7 @@ A specialized editor mode for placing and managing crowd instances in your Unrea
 
 ### Quick Start Guide
 
-1. Add a [VA Asset Collection](va-asset-collection.md) or [Crowd Brush](crowd-brushes.md) Assets via the '+' button or by drag and dropping assets in the designated area
+1. Add a [VA Asset Collection](va-asset-collection.md) or [Crowd Brush](crowd-brushes.md) Assets via the '+' button or by drag and dropping assets in the designated area <br>
 ![Add Brush](assets/crowd_add_brush.jpg){width="60%" style="margin-top: 10px; margin-bottom: 5px;"}
 
 2. Configure brush settings and select them to use with the crowd placement tools
