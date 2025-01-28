@@ -12,16 +12,15 @@ This plugin addresses performance bottlenecks in scenes with multiple animated c
 
 ## Core Features
 
-### Animation Types
-- **Bone Animation**: Enables animation sharing between multiple meshes. Best for projects where memory isn't a primary constraint.
-- **Vertex Animation**: Reduces material costs but requires more texture memory. Animations are unique to each mesh.
+### Main Components
+1. [**Vertex Anim Mesh Component**:](vertex-anim-mesh-component.md) For single-character implementations requiring individual control
+2. [**Vertex Anim Instanced Mesh Component**:](vertex-anim-instanced-mesh-component.md) For efficient rendering of multiple characters
+3. [**VA Anim Player**:](va-animation-player.md) For animation control and playback of individual instances
+4. [**VA Asset Collection**:](va-asset-collection.md) Manages and stores all data required for vertex animations.  It serves as a container holding meshes, animations, and associated data
+5. [**Crowd Tools Editor Mode**:](crowd-tools-editor-mode.md) For visual management and configuration of character groups
 
-### Components
-1. **Vertex Anim Mesh Component**: For single-character implementations requiring individual control
-2. **Vertex Anim Instanced Mesh Component**: For efficient rendering of multiple characters
-3. **Crowd Tools Editor Mode**: For visual management and configuration of character groups
-
-### Animation Logic
+### Vertex Animations
+- **Animation Types**: Choose between bone animations (enables sharing between meshes, ideal for memory-flexible projects) and vertex animations (reduces material costs, requires more texture memory, unique per mesh)
 - **Blueprint Integration**: Program animation behavior using Blueprint-based control systems
 - **Event-Driven**: Trigger animations based on game events and conditions
 - **State Management**: Define complex animation states and transitions
@@ -41,6 +40,8 @@ This plugin addresses performance bottlenecks in scenes with multiple animated c
 - Multiple character placement methods
 
 ## Use Cases
+
+![Crowd Cheering](assets/Crowd_08.jpg)
 
 The plugin is most effective for:
 
@@ -62,5 +63,8 @@ The plugin is most effective for:
 - Flexible animation management
 - Integrated editor toolset
 
+![Crowd Cheering](assets/Crowd_06.jpg)
 
-Check out the [Quick Start Guide](quick-start.md) to begin implementing the Vertex Animation Toolset in your project.
+## To Get Started
+
+- Check out the [Quick Start Guide](quick-start.md) to begin implementing the Vertex Animation Toolset in your project.
