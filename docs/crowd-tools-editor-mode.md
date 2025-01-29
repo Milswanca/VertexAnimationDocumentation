@@ -23,7 +23,7 @@ A specialized editor mode for placing and managing crowd instances in your Unrea
 ![Select Brushes](assets/crowd_ed_selectbrushes.jpg){width="50%" style="margin-top: 10px; margin-bottom: 5px;"}
 
     1. Select which crowd brushes you would like to use with a placement tool
-    2. Select from Paint, Grid or Single Placement modes
+    2. Select from [Paint](crowd-tools-paint.md), [Grid](crowd-tools-grid.md) or [Single Placement](crowd-tools-single.md) modes
 
 3. Start placing instances into the level using your chosen placement tool
 
