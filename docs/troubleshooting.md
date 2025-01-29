@@ -1,44 +1,53 @@
 # Troubleshooting
 
-This guide helps you diagnose and resolve common issues you might encounter while using the Vertex Animation Toolset.
+This guide helps you diagnose and resolve common issues you might encounter while using the VAT Toolset Plugin.
 
-## Common Issues
+## Frequently Asked Questions
 
-### Asset Creation Issues
-- Material conversion failures
-- Animation import problems
-- Asset saving errors
-- Performance concerns
+### Animation Issues
 
-### Component Issues
-- Animation playback problems
-- Component initialization errors
-- Instance rendering issues
-- State management problems
+**Q: Why are my animations playing too slowly?**
 
-### Crowd Tools Issues
-- Placement tool malfunctions
-- Brush behavior problems
-- Selection issues
-- Performance optimization
+A: This is usually related to the animation sequence frame rate. To fix:
 
-### Animation Logic Issues
-- State machine errors
-- Event handling problems
-- Transition failures
-- Blueprint compilation errors
+1. Go to Import Settings
+2. Open the Advanced section
+3. Enable "Set Default Sample Rate"
+4. Click the "Reimport Animation" button at the top
+5. Open your [VA Asset Collection](va-asset-collection.md) and press the Rebuild button
 
-## Performance Optimization
-- Best practices for large crowds
-- Memory management tips
-- Rendering optimization
-- Animation system tuning
+### Material and Rendering Issues
+
+**Q: Should I use translucent materials with my vertex animated meshes?**
+
+A: For non-Nanite meshes, translucent materials can be used but may impact performance. However, when using Nanite, you must use masked materials instead of translucent. Be aware that masked materials can potentially create holes in your mesh when using the Nanite setting.
+
+**Q: Why does my mesh look low quality or broken when enabling Nanite support?**
+
+A: If your mesh appears broken or low quality with Nanite enabled, it's likely using the fallback mesh instead of Nanite. This typically happens when:
+
+1. Materials are set to translucent (use masked materials instead)
+2. After switching to masked materials, rebuild your [VA Asset Collection](va-asset-collection.md)
+
+**Q: What should I do if I get a "Vertex Animation too big" error?**
+
+A: This error occurs when the combined size of vertex count and animation frames exceeds the system's limits. The total size is calculated by multiplying the number of vertices by the number of animation frames. To resolve:
+
+1. Reduce your character's vertex count
+2. Reduce the number of animation frames
+3. Consider using a lower-poly version of your mesh for background characters
+
+## Best Practices
+
+- For Nanite meshes, use masked materials instead of translucent. Ideally, design character models to avoid requiring masked materials altogether
+- Keep vertex counts optimized for your target platform
+- Check animation frame rates during import
 
 ## Getting Help
-- How to report issues
-- Required information for support
-- Community resources
-- Documentation references
+We also offer direct support through our [Discord community](https://discord.gg/PFhpMCCAtc), where you can get help from both the developers and other users.
 
-## Usage
-Coming soon...
+## Read More
+
+- [VA Asset Collection](va-asset-collection.md) - Asset management and configuration
+- [Animation Logic](animation-logic.md) - Animation system details
+- [Crowd Tools Editor Mode](crowd-tools-editor-mode.md) - Editor interface overview
