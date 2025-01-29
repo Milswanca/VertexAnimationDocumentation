@@ -21,7 +21,7 @@ Consider these trade-offs:
 ### 2. Select Animations
 After choosing your animation type, you'll see a window displaying all compatible animations for your mesh. Select the animations you want to include in your [VA Asset Collection](va-asset-collection.md).
 
-   ![Animation Selection](assets/quick_1.png)
+   ![Animation Selection](assets/quick_1.png){style="margin-top: 10px; margin-bottom: 5px;"}
 
    - Use "Select All" or "Deselect All" to quickly manage your selection  
    - Individual animations can be toggled using the checkboxes  
@@ -33,12 +33,12 @@ Choose a location in your content browser to save the new [VA Asset Collection](
 ### 4. Material Adjustment
 Since this is a Vertex Animation system, your materials will need to be modified. A window will appear showing any material errors that need to be resolved.
 
-   ![Material Errors](assets/quick_2.png)
+   ![Material Errors](assets/quick_2.png){style="margin-top: 10px; margin-bottom: 5px;"}
 
 ### 5. Resolve Material Issues
 When resolving material errors, you'll have two options:
 
-   ![Material Resolution Options](assets/quick_3.png)
+   ![Material Resolution Options](assets/quick_3.png){style="margin-top: 10px; margin-bottom: 5px;"}
 
    - **Create Copy**  
      Creates duplicates of your materials before making the necessary changes (recommended to preserve originals)
@@ -49,7 +49,7 @@ When resolving material errors, you'll have two options:
 ### 6. Final Result
 After completing these steps, you'll have a new [VA Asset Collection](va-asset-collection.md) in your content browser.
 
-   ![VA Asset Collection](assets/quick_4.png)
+   ![VA Asset Collection](assets/quick_4.png){style="margin-top: 10px; margin-bottom: 5px;"}
 
 ### 7. Using Your VA Asset Collection
 

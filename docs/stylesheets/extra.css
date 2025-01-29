@@ -136,7 +136,7 @@ code {
 
 /* Body text styling */
 .md-typeset {
-    font-size: .7rem !important;
+    font-size: .67rem !important; /* Reduced from .7rem by just 5% */
     line-height: var(--doc-line-height);
 }
 
@@ -148,18 +148,27 @@ code {
 
 /* Enhanced header hierarchy */
 .md-typeset h1 {
-    font-size: 24px !important;
+    font-size: 21.6px !important; /* Reduced from 24px by 10% */
     color: #eceff1 !important;
     font-weight: 400 !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
     padding-bottom: 0.3em !important;
-    margin-top: 0.2em !important;
-    margin-bottom: 0.6em !important;
+    margin-top: 0 !important;
+    margin-bottom: 0.4em !important;
     line-height: 1.4 !important;
 }
 
+/* Adjust top content spacing */
+.md-content {
+    padding-top: 0.5rem !important;
+}
+
+.md-main__inner {
+    margin-top: 0.5rem !important;
+}
+
 .md-typeset h2 {
-    font-size: 22px !important;
+    font-size: 19.8px !important; /* Reduced from 22px by 10% */
     color: rgba(255, 255, 255, 1) !important;
     font-weight: 500 !important;
     margin-top: 1.0em !important;
@@ -168,7 +177,7 @@ code {
 }
 
 .md-typeset h3 {
-    font-size: 17px !important;
+    font-size: 15.3px !important; /* Reduced from 17px by 10% */
     color: rgba(255, 255, 255, 0.85) !important;
     font-weight: 400 !important;
     margin-top: 1em !important;
@@ -177,7 +186,7 @@ code {
 }
 
 .md-typeset h4, .md-typeset h5, .md-typeset h6 {
-    font-size: 16px !important;
+    font-size: 14.4px !important; /* Reduced from 16px by 10% */
     color: #eceff1 !important;
     font-weight: 400 !important;
     margin-top: 1em !important;
@@ -218,7 +227,7 @@ code {
     color: rgba(255, 255, 255, 0.75) !important;
     line-height: 1.1 !important;
     padding: 0.01em 0 !important;
-    font-size: 0.7rem !important;
+    font-size: 0.67rem !important; /* Reduced from 0.7rem by just 5% */
     transition: color 0.2s ease-out, text-shadow 0.2s ease-out !important;
     outline: none !important;
     white-space: nowrap !important;
@@ -236,7 +245,7 @@ code {
 
 /* Main navigation spacing */
 .md-nav--primary > .md-nav__list > .md-nav__item {
-    margin-bottom: 0.4em !important;
+    margin-bottom: 0.2em !important;
 }
 
 .md-nav--primary > .md-nav__list > .md-nav__item:last-child {
@@ -244,25 +253,25 @@ code {
 }
 
 .md-nav__item .md-nav__link--active {
-    margin-bottom: 0.2em !important;
+    margin-bottom: 0.1em !important;
 }
 
 .md-nav__item .md-nav {
     margin-left: 1em !important;
-    margin-top: 0.2em !important;
+    margin-top: 0.1em !important;
 }
 
 /* Table of contents styling */
 .md-nav--secondary .md-nav__title {
-    font-size: 0.7rem !important;
+    font-size: 0.67rem !important; /* Reduced from 0.7rem by just 5% */
     font-weight: 500 !important;
     color: #eceff1 !important;
     opacity: 0.9 !important;
-    margin-bottom: 1em !important;
+    margin-bottom: 0.5em !important;
 }
 
 .md-nav--secondary > .md-nav__list > .md-nav__item {
-    margin-bottom: 0.8em !important;
+    margin-bottom: 0.2em !important;
 }
 
 .md-nav--secondary > .md-nav__list > .md-nav__item:last-child {
