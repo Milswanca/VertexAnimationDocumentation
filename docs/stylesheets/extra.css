@@ -392,7 +392,10 @@ code {
 
 /* Style answer content */
 .md-typeset details > .md-typeset__answer {
-    padding: 1.2em !important;
+    padding-top: 0.5em !important;
+    padding-left: 1.3em !important;
+    padding-right: 1.0em !important;
+    padding-bottom: 0.3em !important;
     margin: 0 !important;
     background-color: rgba(29, 42, 58, 0.2) !important;
     border-radius: 0 0 4px 4px !important;
