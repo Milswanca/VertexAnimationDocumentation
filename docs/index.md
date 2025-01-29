@@ -22,16 +22,6 @@ This plugin addresses performance bottlenecks in scenes with multiple animated c
 ### Vertex Animations
 - **Animation Types**: Choose between bone animations (enables sharing between meshes, ideal for memory-flexible projects) and vertex animations (reduces material costs, requires more texture memory, unique per mesh)
 - **Blueprint Integration**: Program animation behavior using Blueprint-based control systems
-- **Event-Driven**: Trigger animations based on game events and conditions
-- **State Management**: Define complex animation states and transitions
-- **Runtime Control**: Dynamically adjust animation behavior during gameplay
-- **Flexible Rules**: Create custom animation selection logic and priority systems
-
-### Performance
-- Eliminates per-frame skeletal computation overhead
-- Uses GPU-efficient instanced rendering
-- Optimizes memory usage through shared resources
-- Scales effectively with large numbers of characters
 
 ### Workflow Integration
 - Direct conversion from existing skeletal animations
@@ -52,11 +42,11 @@ The plugin is most effective for:
 
 ## Technical Overview
 
-### Runtime Performance
-- Reduced CPU overhead per frame
-- Efficient GPU batch processing
-- Optimized memory footprint
-- Streamlined rendering pipeline
+### Performance
+- Eliminates per-frame skeletal computation overhead
+- Uses GPU-efficient instanced rendering
+- Optimizes memory usage through shared resources
+- Scales effectively with large numbers of characters
 
 ### Development
 - Compatible with UE 5.4 and above

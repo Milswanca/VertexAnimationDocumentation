@@ -4,6 +4,22 @@ Tools for controlling how crowd elements are placed and configured in your scene
 
 ![Brush Overview](assets/crowd_brush_overview.jpg){width="70%" style="margin-top: 10px; margin-bottom: 5px;"}
 
+## Overview
+
+### 1. Paint Settings
+- **Mesh Index selection:** If using Bone Animation types you can select which sub mesh to use here
+- **Shadow casting options:** Toggle shadow casting on the instances when they are placed in the level
+
+### 2. Per Instance Animation Data
+- **Animation List Logic:** Select and edit your Animation Logic settings. For more information see [Animation Logic](animation-logic.md)
+
+### 3. Painting Settings
+- **Density (per 1Kuu):** Controls the number of instances placed within a 10m² area
+- **Min Distance Between Instances:** Sets the minimum spacing required between newly placed instances within the paint brush area
+- **Scaling Mode:** Select from various scaling constraints Uniform, Free and Lock XY/XZ/YZ
+- **Scale (X, Y, Z):** Define minimum and maximum scale values for each axis - instances will be randomly scaled within these bounds
+
+
 ## Creating Brushes
 
 ### Direct Addition
@@ -15,23 +31,6 @@ Tools for controlling how crowd elements are placed and configured in your scene
 - Configure settings in the brush panel
 
 ![Add Brush](assets/crowd_add_brush.jpg){width="70%" style="margin-top: 10px; margin-bottom: 5px;"}
-
-## Core Settings
-
-### Paint Settings
-- Mesh Index selection
-- Shadow casting options
-
-### Animation
-- Per-instance animation data
-- Sequence configuration
-- Start position/animation randomization
-
-### Placement
-- Density and spacing control
-- Surface alignment options
-- Position and rotation settings
-- Scale adjustments
 
 ## Distribution
 
