@@ -337,3 +337,68 @@ code {
 .md-footer-meta {
     display: none !important;
 }
+
+/* Custom styling for details/summary boxes */
+.md-typeset details {
+    position: relative !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    background-color: rgba(29, 42, 58, 0.3) !important;
+    box-shadow: none !important;
+    margin: 0.8em 0 !important;
+    padding: 0 !important;
+    font-size: inherit !important;
+    border-radius: 4px !important;
+}
+
+.md-typeset details > summary {
+    position: relative !important;
+    background-color: rgba(29, 42, 58, 0.6) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    padding: 1em !important;
+    padding-right: 2.5em !important;
+    margin: 0 !important;
+    cursor: pointer !important;
+    font-weight: 500 !important;
+    outline: none !important;
+    list-style: none !important;
+}
+
+/* Remove default markers and Material theme elements */
+.md-typeset details > summary::marker,
+.md-typeset details > summary::-webkit-details-marker,
+.md-typeset details > summary::before,
+.md-typeset details > summary > .twemoji,
+.md-typeset details > summary > .md-button,
+.md-typeset details > summary > .md-icon,
+.md-typeset details > summary > svg {
+    display: none !important;
+}
+
+/* Add plus/minus indicator */
+.md-typeset details > summary::after {
+    content: "+" !important;
+    position: absolute !important;
+    right: 1em !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    font-size: 1.2em !important;
+    font-weight: 400 !important;
+    opacity: 0.7 !important;
+}
+
+.md-typeset details[open] > summary::after {
+    content: "−" !important;
+}
+
+/* Style answer content */
+.md-typeset details > .md-typeset__answer {
+    padding: 1.2em !important;
+    margin: 0 !important;
+    background-color: rgba(29, 42, 58, 0.2) !important;
+    border-radius: 0 0 4px 4px !important;
+}
+
+/* Hover effect */
+.md-typeset details > summary:hover {
+    background-color: rgba(29, 42, 58, 0.8) !important;
+}
