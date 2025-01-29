@@ -19,7 +19,7 @@ Tools for controlling how crowd elements are placed and configured in your scene
 
 ### 4. Placement Settings
 - **Z Offset:** Adjusts the vertical position of instances in the level. Use different Min/Max values to create random height variations
-- **Align to Normal:** Automatically orients instances to match the surface normal direction they are painted on
+- **Align to Normal:** Automatically orients instances to match the surface normal direction they are painted on (limited by **Ground Slope Angle**)
 - **Average Normal:** Smooths instance orientation by averaging nearby surface normals on uneven terrain
 - **Average Normal Single Component:** Limits normal averaging to a single component for more controlled orientation
 - **Ground Slope Angle:** Defines the minimum and maximum slope angles where instances can be painted and aligned with normals
