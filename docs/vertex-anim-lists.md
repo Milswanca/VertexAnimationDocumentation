@@ -14,7 +14,6 @@ VA Lists organize and manage animation behaviors for vertex-animated meshes.
 3. Select Animation Logic class
 4. Configure default values
 
-![VA Lists Setup](assets/placeholder-valists-setup.png)
 
 ## Core Features
 
