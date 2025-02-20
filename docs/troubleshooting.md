@@ -37,7 +37,18 @@ This guide helps you diagnose and resolve common issues you might encounter whil
     ![Reduce Verts](assets/vertexdimensionreducevertices.jpg){ style="margin-top: 10px; margin-bottom: 5px;"}
     2. Reduce the number of animation frames
     ![Reduce Frames](assets/vertexdimensionreduceframes.jpg){ style="margin-top: 10px; margin-bottom: 5px;"}
-    3. Consider using a lower-poly version of your mesh for background characters or switching to bone mode when creating your assets.
+    3. Consider using a lower-poly version of your mesh for background characters or switch to bone mode when [creating your assets](quick-start.md).
+    </div>
+
+??? "VA Asset Collection file size is too large."
+    <div class="md-typeset__answer">
+
+    You can reduce the file size of your asset by unticking precision textures in the animation build settings.
+
+    1. Open the VA Asset Collection and untick Generate High Precision Textures:
+    ![High Precision](assets/va_precisiontexture.jpg){ style="margin-top: 10px; margin-bottom: 5px;"}
+    2. Select "Rebuild Asset" at the top of the editor window.
+
     </div>
 
 ## Best Practices
