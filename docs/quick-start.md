@@ -6,17 +6,17 @@
 Right-click on your skeletal mesh and choose between two options:
 
    - **Make Bone Animation**  
-     Allows for animation sharing and is preferable when memory isn't a constraint.
+     While this method enables animation sharing and accommodates more animations and vertices than Vertex Animation, it is not as performant. For maximum FPS in crowd animations, consider using Vertex Animation instead.
 
    - **Make Vertex Animation**  
-     Uses larger textures but has lower material cost. However, it doesn't support animation sharing (multiple meshes using the same animation asset).
+     This method is more performant and requires larger textures but has lower material costs. However, it doesn't support animation sharing, meaning multiple meshes cannot use the same animation asset.
 
 *Which should you choose?*
 
 Consider these trade-offs:
 
-   - For sharing animations across multiple meshes: Use **Bone Animation**  
-   - For optimizing material costs: Use **Vertex Animation**
+   - **Bone Animation:** Best for sharing animations across multiple meshes or when using many animations  
+   - **Vertex Animation:** Best for performance and lower material costs
 
 ### 2. Select Animations
 After choosing your animation type, you'll see a window displaying all compatible animations for your mesh. Select the animations you want to include in your [VA Asset Collection](va-asset-collection.md).

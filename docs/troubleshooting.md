@@ -2,10 +2,6 @@
 
 This guide helps you diagnose and resolve common issues you might encounter while using the VAT Toolset Plugin.
 
-## Frequently Asked Questions
-
-### Animation Issues
-
 ??? "Why are my animations playing too slowly?"
     <div class="md-typeset__answer">
     This is usually related to the animation sequence frame rate. To fix:
@@ -16,8 +12,6 @@ This guide helps you diagnose and resolve common issues you might encounter whil
     4. Click the "Reimport Animation" button at the top
     5. Open your [VA Asset Collection](va-asset-collection.md) and press the Rebuild button
     </div>
-
-### Material and Rendering Issues
 
 ??? "Should I use translucent materials with my vertex animated meshes?"
     <div class="md-typeset__answer">
@@ -32,13 +26,18 @@ This guide helps you diagnose and resolve common issues you might encounter whil
     2. After switching to masked materials, rebuild your [VA Asset Collection](va-asset-collection.md)
     </div>
 
-??? "What should I do if I get a 'Vertex Animation too big' error?"
+??? "Error Creating Vertex Animation: Required texture dimension exceeds maximum."
     <div class="md-typeset__answer">
-    This error occurs when the combined size of vertex count and animation frames exceeds the system's limits. The total size is calculated by multiplying the number of vertices by the number of animation frames. To resolve:
 
-    1. Reduce your character's vertex count
+    ![Error Msg](assets/vertexdimensionerror.jpg){ style="margin-top: 10px; margin-bottom: 5px;"}
+
+    This error occurs when the combined size of vertex count and animation frames exceeds the system's limits. The total size is calculated by multiplying the number of vertices by the number of animation frames and then taking the square root of the result. The data will need to be written to a texture with these dimensions. The texture dimensions cannot exceed 8192 by 8192. To resolve:
+
+    1. Reduce your character's vertex count. You can decimate vertices in blender or you can use Unreal's reduction settings, found in the Skeletal Mesh editor window:
+    ![Reduce Verts](assets/vertexdimensionreducevertices.jpg){ style="margin-top: 10px; margin-bottom: 5px;"}
     2. Reduce the number of animation frames
-    3. Consider using a lower-poly version of your mesh for background characters
+    ![Reduce Frames](assets/vertexdimensionreduceframes.jpg){ style="margin-top: 10px; margin-bottom: 5px;"}
+    3. Consider using a lower-poly version of your mesh for background characters or switching to bone mode when creating your assets.
     </div>
 
 ## Best Practices
