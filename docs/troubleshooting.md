@@ -2,7 +2,7 @@
 
 This guide helps you diagnose and resolve common issues you might encounter while using the VAT Toolset Plugin.
 
-??? "Why are my animations playing too slowly?"
+??? "Why are my animations playing slow?"
     <div class="md-typeset__answer">
     This is usually related to the animation sequence frame rate. To fix:
 
@@ -48,6 +48,21 @@ This guide helps you diagnose and resolve common issues you might encounter whil
     1. Open the VA Asset Collection and untick Generate High Precision Textures:
     ![High Precision](assets/va_precisiontexture.jpg){ style="margin-top: 10px; margin-bottom: 5px;"}
     2. Select "Rebuild Asset" at the top of the editor window.
+
+    </div>
+
+??? "Ripple or wavy appearing animations."
+    <div class="md-typeset__answer">
+
+    When "Generate High Precision Textures" is disabled on your VA Asset Collection, animations may display rippling or wave-like artifacts. This occurs because fewer vertex positions are recorded per vertex, reducing animation texture storage requirements.
+    This lower precision setting is suitable for background crowd instances that remain distant from the camera. However, for crowd elements that will appear closer to the camera, consider either:
+
+    - Enabling the "Generate High Precision Textures" option, or
+    - Selecting "Bone Animation" mode when creating your VA Asset Collection
+
+    **Important:** Don't forget to press Rebuild Asset when adjusting settings on the VA Asset Collection
+
+    ![High Precision](assets/va_precisiontexture_small.jpg){ style="margin-top: 10px; margin-bottom: 5px; max-width: 300px;"}
 
     </div>
 
