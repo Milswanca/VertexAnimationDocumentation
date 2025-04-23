@@ -146,6 +146,7 @@ code {
     line-height: var(--doc-line-height);
 }
 
+
 /* Enhanced header hierarchy */
 .md-typeset h1 {
     font-size: 21.6px !important; /* Reduced from 24px by 10% */
@@ -217,9 +218,19 @@ code {
     border: 1px solid rgba(255, 255, 255, 0.05) !important;
 }
 
+/* Center images */
+.md-typeset img {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 90% !important;
+    border-radius: 4px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
 /* Adjust content width for better readability */
 .md-grid {
-    max-width: 64rem !important;
+    max-width: 58rem !important;
 }
 
 /* Navigation with better contrast */
@@ -345,6 +356,25 @@ code {
 /* Hide footer */
 .md-footer-meta {
     display: none !important;
+}
+
+/* Center Mermaid diagrams */
+.mermaid {
+    display: flex !important;
+    justify-content: center !important;
+    margin: 1.5em auto !important;
+    max-width: 90% !important;
+}
+
+/* Center tables */
+.md-typeset table {
+    display: table !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 90% !important;
+    margin-top: 1.5em !important;
+    margin-bottom: 1.5em !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
 }
 
 /* Custom styling for details/summary boxes */
