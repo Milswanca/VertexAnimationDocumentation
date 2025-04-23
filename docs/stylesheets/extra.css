@@ -1,10 +1,15 @@
 /* Global variables */
 :root {
-    --doc-line-height: 1.8 !important;
-    --doc-letter-spacing: 0.03em !important;
-    --md-text-font: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif !important;
+    --doc-line-height: 1.6 !important;
+    --doc-letter-spacing: 0.02em !important;
+    --md-text-font: "Source Sans Pro", "Lato", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif !important;
     --md-code-font: "Cascadia Code", Consolas, "Courier New", monospace !important;
 }
+
+/* Import Source Sans Pro font */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+/* Import Lato as backup */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 /* Remove focus outlines */
 :focus,
@@ -136,7 +141,7 @@ code {
 
 /* Body text styling */
 .md-typeset {
-    font-size: .67rem !important; /* Reduced from .7rem by just 5% */
+    font-size: .75rem !important; /* Increased for better readability */
     line-height: var(--doc-line-height);
 }
 
@@ -149,7 +154,7 @@ code {
 
 /* Enhanced header hierarchy */
 .md-typeset h1 {
-    font-size: 21.6px !important; /* Reduced from 24px by 10% */
+    font-size: 24px !important; /* Increased for better readability */
     color: #eceff1 !important;
     font-weight: 400 !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
@@ -169,7 +174,7 @@ code {
 }
 
 .md-typeset h2 {
-    font-size: 19.8px !important; /* Reduced from 22px by 10% */
+    font-size: 22px !important; /* Increased for better readability */
     color: rgba(255, 255, 255, 1) !important;
     font-weight: 500 !important;
     margin-top: 1.0em !important;
@@ -178,7 +183,7 @@ code {
 }
 
 .md-typeset h3 {
-    font-size: 15.3px !important; /* Reduced from 17px by 10% */
+    font-size: 17px !important; /* Increased for better readability */
     color: rgba(255, 255, 255, 0.85) !important;
     font-weight: 400 !important;
     margin-top: 1em !important;
@@ -187,7 +192,7 @@ code {
 }
 
 .md-typeset h4, .md-typeset h5, .md-typeset h6 {
-    font-size: 14.4px !important; /* Reduced from 16px by 10% */
+    font-size: 16px !important; /* Increased for better readability */
     color: #eceff1 !important;
     font-weight: 400 !important;
     margin-top: 1em !important;
@@ -238,7 +243,7 @@ code {
     color: rgba(255, 255, 255, 0.75) !important;
     line-height: 1.1 !important;
     padding: 0.01em 0 !important;
-    font-size: 0.67rem !important; /* Reduced from 0.7rem by just 5% */
+    font-size: 0.75rem !important; /* Increased for better readability */
     transition: color 0.2s ease-out, text-shadow 0.2s ease-out !important;
     outline: none !important;
     white-space: nowrap !important;
@@ -274,7 +279,7 @@ code {
 
 /* Table of contents styling */
 .md-nav--secondary .md-nav__title {
-    font-size: 0.67rem !important; /* Reduced from 0.7rem by just 5% */
+    font-size: 0.75rem !important; /* Increased for better readability */
     font-weight: 500 !important;
     color: #eceff1 !important;
     opacity: 0.9 !important;
