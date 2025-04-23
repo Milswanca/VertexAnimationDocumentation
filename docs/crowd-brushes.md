@@ -45,8 +45,12 @@ Tools for controlling how crowd elements are placed and configured in your scene
 
 ![Create Brush](assets/crowd_ed_brush_rightclick.jpg){width="40%" style="margin-top: 10px; margin-bottom: 5px;"}
 
-## Read More
+## See Also
 
+- [Workflow Overview](workflow-overview.md) - Understand how Crowd Brushes fit into the overall process
 - [Crowd Tools Editor Mode](crowd-tools-editor-mode.md) - Main editor interface
-- [VA Asset Collection](va-asset-collection.md) - Animation asset management
-- [Animation Logic](animation-logic.md) - Custom animation behaviors
+- [Paint Tool](crowd-tools-paint.md) - Use brushes with free-form placement
+- [Grid Tool](crowd-tools-grid.md) - Use brushes with grid-based placement
+- [Single Placement](crowd-tools-single.md) - Use brushes with precise placement
+- [VA Asset Collection](va-asset-collection.md) - The asset type used by Crowd Brushes
+- [VA Animation Logic](animation-logic.md) - Define custom animation behaviors

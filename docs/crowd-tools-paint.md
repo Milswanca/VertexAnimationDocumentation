@@ -31,7 +31,10 @@ Each brush defines how instances are placed and configured in your scene:
 
 For detailed configuration options, see [Crowd Brushes](crowd-brushes.md)
 
-## Read More
-- [Grid Tool](crowd-tools-grid.md) - Place instances in grid patterns
-- [Crowd Brushes](crowd-brushes.md) - Detailed brush configuration
+## See Also
+- [Workflow Overview](workflow-overview.md) - Understand how placement tools fit into the overall process
+- [Crowd Tools Editor Mode](crowd-tools-editor-mode.md) - Main editor interface
+- [Crowd Brushes](crowd-brushes.md) - Configure brush properties for painting
+- [Grid Tool](crowd-tools-grid.md) - Alternative grid-based placement
+- [Single Placement](crowd-tools-single.md) - Alternative precise placement
 - [Keyboard Shortcuts](crowd-tools-keyboard-shortcuts.md) - Available shortcuts while painting

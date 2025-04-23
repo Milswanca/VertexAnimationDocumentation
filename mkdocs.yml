@@ -13,26 +13,33 @@ extra_css:
 nav:
     - About the Plugin: index.md
     - Quick Start Guide: quick-start.md
+    - Workflow Overview: workflow-overview.md
     - Assets:
         - VA Asset Collection: va-asset-collection.md
         - VA Asset Editor: va-asset-editor.md
     - Animation System:
-        - VA Player: va-animation-player.md
-        - VA Lists: vertex-anim-lists.md
-        - VA Logic: animation-logic.md
+        - VA Animation Player: va-animation-player.md
+        - VA Animation Lists: vertex-anim-lists.md
+        - VA Animation Logic: animation-logic.md
     - Components:
-        - VA Mesh Component: vertex-anim-mesh-component.md
-        - VA Instanced Mesh Component: vertex-anim-instanced-mesh-component.md
+        - VA Mesh Component (Single): vertex-anim-mesh-component.md
+        - VA Instanced Mesh Component (Multiple): vertex-anim-instanced-mesh-component.md
     - Crowd Tools:
-        - Overview: crowd-tools-editor-mode.md
-        - Keyboard Shortcuts: crowd-tools-keyboard-shortcuts.md
+        - Editor Mode Overview: crowd-tools-editor-mode.md
         - Crowd Brushes: crowd-brushes.md
-        - Paint Tool: crowd-tools-paint.md
-        - Grid Tool: crowd-tools-grid.md
-        - Single Placement: crowd-tools-single.md
+        - Placement Methods:
+            - Paint Tool: crowd-tools-paint.md
+            - Grid Tool: crowd-tools-grid.md
+            - Single Placement: crowd-tools-single.md
+        - Keyboard Shortcuts: crowd-tools-keyboard-shortcuts.md
     - Troubleshooting: troubleshooting.md
 
 markdown_extensions:
   - attr_list
   - admonition
   - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format

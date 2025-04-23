@@ -24,8 +24,11 @@ Instance placement is affected by the selected crowd brush's placement settings,
 
 For detailed brush configuration options, see [Crowd Brushes](crowd-brushes.md).
 
-## Read More
-- [Troubleshooting](troubleshooting.md) - Find solutions for common problems and links to contact support
-- [Crowd Brushes](crowd-brushes.md) - Brush configuration options
+## See Also
+- [Workflow Overview](workflow-overview.md) - Understand how placement tools fit into the overall process
+- [Crowd Tools Editor Mode](crowd-tools-editor-mode.md) - Main editor interface
+- [Crowd Brushes](crowd-brushes.md) - Configure brush properties for single placement
+- [Paint Tool](crowd-tools-paint.md) - Alternative free-form placement
+- [Grid Tool](crowd-tools-grid.md) - Alternative grid-based placement
 - [Keyboard Shortcuts](crowd-tools-keyboard-shortcuts.md) - Complete list of available shortcuts
-
+- [Troubleshooting](troubleshooting.md) - Find solutions for common problems

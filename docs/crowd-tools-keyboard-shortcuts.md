@@ -34,7 +34,11 @@ This page outlines the keyboard shortcuts available when using the tools in Crow
 |----------|---------|
 | `Ctrl + Scroll` | Resize Brush Size |
 
-## Read More
+## See Also
 
-- [Crowd Brushes](crowd-brushes.md) - Detailed brush configuration
-- [Crowd Editor Mode](crowd-tools-editor-mode.md) - Main editor interface
+- [Workflow Overview](workflow-overview.md) - Understand how Crowd Tools fit into the overall process
+- [Crowd Tools Editor Mode](crowd-tools-editor-mode.md) - Main editor interface
+- [Paint Tool](crowd-tools-paint.md) - Free-form brush-based placement
+- [Grid Tool](crowd-tools-grid.md) - Structured grid-based placement
+- [Single Placement](crowd-tools-single.md) - Precise individual placement
+- [Crowd Brushes](crowd-brushes.md) - Configure brush properties

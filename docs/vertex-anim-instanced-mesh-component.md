@@ -16,6 +16,10 @@ This component functions exactly like the [VA Mesh Component](vertex-anim-mesh-c
 For details on animation setup and control, refer to the [VA Mesh Component](vertex-anim-mesh-component.md) documentation, as both components share the same animation functionality.
 
 ## See Also
+- [Workflow Overview](workflow-overview.md) - Understand how components fit into the overall process
 - [Crowd Tools](crowd-tools-editor-mode.md) - Tools for managing crowd instances
 - [VA Mesh Component](vertex-anim-mesh-component.md) - For single instance usage
-- [VA Animation Player](va-animation-player.md) - Animation playback functions
+- [VA Animation Player](va-animation-player.md) - Control animations in your component
+- [VA Animation Lists](vertex-anim-lists.md) - Organize and manage animation sequences
+- [VA Animation Logic](animation-logic.md) - Define custom animation behaviors
+- [VA Asset Collection](va-asset-collection.md) - The asset type used by this component

@@ -27,7 +27,10 @@ Controls the vertical grid layout:
 - **Extent Y**: Total depth of the grid in units
 - **Centered Y**: Centers the grid vertically around the placement point
 
-## Read More
-- [Single Placement](crowd-tools-single.md) - Place individual instances
-- [Crowd Brushes](crowd-brushes.md) - Brush configuration options
+## See Also
+- [Workflow Overview](workflow-overview.md) - Understand how placement tools fit into the overall process
+- [Crowd Tools Editor Mode](crowd-tools-editor-mode.md) - Main editor interface
+- [Crowd Brushes](crowd-brushes.md) - Configure brush properties for grid placement
+- [Paint Tool](crowd-tools-paint.md) - Alternative free-form placement
+- [Single Placement](crowd-tools-single.md) - Alternative precise placement
 - [Keyboard Shortcuts](crowd-tools-keyboard-shortcuts.md) - Available shortcuts while using tools

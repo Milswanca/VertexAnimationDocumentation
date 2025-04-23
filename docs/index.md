@@ -57,4 +57,6 @@ The plugin is most effective for:
 
 ## To Get Started
 
-- Check out the [Quick Start Guide](quick-start.md) to begin implementing the Vertex Animation Toolset in your project.
+- Follow the [Quick Start Guide](quick-start.md) to begin implementing the Vertex Animation Toolset in your project
+- View the [Workflow Overview](workflow-overview.md) to understand how all components work together
+- Explore the [Troubleshooting](troubleshooting.md) page if you encounter any issues

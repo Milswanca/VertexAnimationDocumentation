@@ -1,10 +1,10 @@
 # UVAAssetCollection
 
-The VA Asset Collection is the core asset type in the Vertex Animation Toolset that manages and stores all data required for vertex animations. It serves as a container that holds meshes, animations, and their associated data. 
+The VA Asset Collection is the core asset type in the Vertex Animation Toolset that manages and stores all data required for vertex animations. It serves as a container that holds meshes, animations, and their associated data.
 
 ![VA Asset Collection](assets/vaassetcollection.jpg){width="20%" style="margin-top: 10px;"}
 
-For step-by-step instructions on creating a VA Asset Collection, see our [Quick Start Guide](quick-start.md).
+For step-by-step instructions on creating a VA Asset Collection, see our [Quick Start Guide](quick-start.md). To understand how VA Asset Collections fit into the overall workflow, check out the [Workflow Overview](workflow-overview.md).
 
 
 
@@ -64,3 +64,7 @@ A custom editor window is available for working with VA Asset Collections. See t
 
 - [Quick Start Guide](quick-start.md) - How to create and configure VA Asset Collections
 - [VA Asset Editor](va-asset-editor.md) - Edit existing VA Asset Collections
+- [Workflow Overview](workflow-overview.md) - Understand how VA Asset Collections fit into the overall process
+- [VA Animation Player](va-animation-player.md) - Control animations in your VA Asset Collection
+- [VA Mesh Component](vertex-anim-mesh-component.md) - Use VA Asset Collections with single characters
+- [VA Instanced Mesh Component](vertex-anim-instanced-mesh-component.md) - Use VA Asset Collections with multiple characters

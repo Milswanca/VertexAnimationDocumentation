@@ -66,8 +66,11 @@ After creating your [VA Asset Collection](va-asset-collection.md), you have thre
 
 ## Next Steps
 
-Choose your implementation path:
+Now that you've created your first VA Asset Collection, you can:
 
-- [Learn about Crowd Tools Editor Mode](crowd-tools-editor-mode.md)
-- [Use the Vertex Anim Mesh Component](vertex-anim-mesh-component.md)
-- [Implement Instanced Mesh Components](vertex-anim-instanced-mesh-component.md)
+- **Understand the complete workflow**: Check out the [Workflow Overview](workflow-overview.md) to see how all components work together
+- **Choose your implementation path**:
+  - For single characters: [Use the VA Mesh Component](vertex-anim-mesh-component.md)
+  - For multiple characters/crowds: [Implement VA Instanced Mesh Components](vertex-anim-instanced-mesh-component.md)
+  - For visual crowd management: [Learn about Crowd Tools Editor Mode](crowd-tools-editor-mode.md)
+- **Learn about animation control**: Explore the [VA Animation Player](va-animation-player.md) documentation
