@@ -21,64 +21,64 @@ graph TD
 
 ## 1. Asset Creation
 
-The first step is to convert your skeletal mesh animations into vertex animations:
-
-1. Right-click on your skeletal mesh in the content browser
-2. Choose either "Make Bone Animation" or "Make Vertex Animation"
-3. Select the animations you want to include
-4. Create and save your VA Asset Collection
-
-For detailed instructions, see the [Quick Start Guide](quick-start.md).
+> The first step is to convert your skeletal mesh animations into vertex animations:
+>
+> 1. Right-click on your skeletal mesh in the content browser
+> 2. Choose either "Make Bone Animation" or "Make Vertex Animation"
+> 3. Select the animations you want to include
+> 4. Create and save your VA Asset Collection
+>
+> For detailed instructions, see the [Quick Start Guide](quick-start.md).
 
 ## 2. Asset Configuration
 
-Once your VA Asset Collection is created, you can configure it using the VA Asset Editor:
-
-- Adjust animation build settings
-- Configure mesh properties
-- Set up custom data for instance variations
-- Rebuild the asset after making changes
-
-For more information, see [VA Asset Collection](va-asset-collection.md) and [VA Asset Editor](va-asset-editor.md).
+> Once your VA Asset Collection is created, you can configure it using the VA Asset Editor:
+>
+> - Adjust animation build settings
+> - Configure mesh properties
+> - Set up custom data for instance variations
+> - Rebuild the asset after making changes
+>
+> For more information, see [VA Asset Collection](va-asset-collection.md) and [VA Asset Editor](va-asset-editor.md).
 
 ## 3. Implementation Options
 
-The Vertex Animation Toolset offers two main implementation paths:
-
-### Single Character Implementation
-
-For individual characters that need precise control:
-
-- Use the [VA Mesh Component](vertex-anim-mesh-component.md)
-- Configure animation lists and logic
-- Control animations through the VA Animation Player
-
-### Multiple Characters/Crowds Implementation
-
-For efficiently rendering multiple characters:
-
-- Use the [VA Instanced Mesh Component](vertex-anim-instanced-mesh-component.md)
-- Manage instances through code or the Crowd Tools
-- Control batch animations through the VA Animation Player
+> The Vertex Animation Toolset offers two main implementation paths:
+>
+> ## Single Character Implementation:
+>
+> For individual characters that need precise control:
+>
+> - Use the [VA Mesh Component](vertex-anim-mesh-component.md)
+> - Configure animation lists and logic
+> - Control animations through the VA Animation Player
+>
+> ## Multiple Characters/Crowds Implementation:
+>
+> For efficiently rendering multiple characters:
+>
+> - Use the [VA Instanced Mesh Component](vertex-anim-instanced-mesh-component.md)
+> - Manage instances through code or the Crowd Tools
+> - Control batch animations through the VA Animation Player
 
 ## 4. Crowd Management
 
-For scenes with multiple characters, the Crowd Tools provide intuitive ways to place and manage instances:
-
-- [Crowd Editor Mode](crowd-tools-editor-mode.md) for overall management
-- [Crowd Brushes](crowd-brushes.md) for configuring instance properties
-- Multiple placement methods:
-  - [Paint Tool](crowd-tools-paint.md) for free-form placement
-  - [Grid Tool](crowd-tools-grid.md) for structured placement
-  - [Single Placement](crowd-tools-single.md) for precise individual placement
+> For scenes with multiple characters, the Crowd Tools provide intuitive ways to place and manage instances:
+>
+> - [Crowd Editor Mode](crowd-tools-editor-mode.md) for overall management
+> - [Crowd Brushes](crowd-brushes.md) for configuring instance properties
+> - Multiple placement methods:
+>  - [Paint Tool](crowd-tools-paint.md) for free-form placement
+>  - [Grid Tool](crowd-tools-grid.md) for structured placement
+>  - [Single Placement](crowd-tools-single.md) for precise individual placement
 
 ## 5. Animation Control
 
-Control your vertex animations through:
-
-- [VA Animation Player](va-animation-player.md) for playback control
-- [VA Lists](vertex-anim-lists.md) for organizing animations
-- [Animation Logic](animation-logic.md) for defining animation behaviors
+> Control your vertex animations through:
+>
+> - [VA Animation Player](va-animation-player.md) for playback control
+> - [VA Lists](vertex-anim-lists.md) for organizing animations
+> - [Animation Logic](animation-logic.md) for defining animation behaviors
 
 ## Decision Guide
 
