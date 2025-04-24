@@ -243,7 +243,7 @@ code {
     color: rgba(255, 255, 255, 0.75) !important;
     line-height: 1.1 !important;
     padding: 0.01em 0 !important;
-    font-size: 0.75rem !important; /* Increased for better readability */
+    font-size: 0.65rem !important; /* Smaller than main body text */
     transition: color 0.2s ease-out, text-shadow 0.2s ease-out !important;
     outline: none !important;
     white-space: nowrap !important;
@@ -279,7 +279,7 @@ code {
 
 /* Table of contents styling */
 .md-nav--secondary .md-nav__title {
-    font-size: 0.75rem !important; /* Increased for better readability */
+    font-size: 0.65rem !important; /* Smaller than main body text */
     font-weight: 500 !important;
     color: #eceff1 !important;
     opacity: 0.9 !important;
