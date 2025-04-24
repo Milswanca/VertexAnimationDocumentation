@@ -135,7 +135,7 @@ code {
 .md-nav__title {
     margin: 0 0 0.5em !important;
     font-size: 1em !important;
-    line-height: 1.2 !important;
+    line-height: normal !important;
     opacity: 0.7 !important;
 }
 
@@ -241,7 +241,7 @@ code {
 /* Navigation with better contrast */
 .md-nav__link {
     color: rgba(255, 255, 255, 0.75) !important;
-    line-height: 1.1 !important;
+    line-height: normal !important;
     padding: 0.01em 0 !important;
     font-size: 0.65rem !important; /* Smaller than main body text */
     transition: color 0.2s ease-out, text-shadow 0.2s ease-out !important;

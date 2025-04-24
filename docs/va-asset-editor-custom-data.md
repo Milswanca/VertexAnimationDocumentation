@@ -1,10 +1,10 @@
-# VA Asset Editor - Custom Data
+# Custom Data - Instance Variations
 
 This page details the custom data settings in the VA Asset Editor, which allow you to create variations between instances of your vertex animated meshes.
 
 ## Per Instance Custom Data
 
-The Per Instance Custom Data system is a powerful feature that enables dynamic material variation across instances. Each custom data entry consists of:
+The Per Instance Custom Data system allows you to inject randomized or controlled float values into your instanced materials. This creates visual diversity across instances without the need for multiple materials or meshes. Each custom data entry consists of:
 
 - **Custom Data Name**: A unique identifier used to reference this parameter in your materials
 - **Custom Float Range**: Minimum and maximum values for the parameter
@@ -12,7 +12,22 @@ The Per Instance Custom Data system is a powerful feature that enables dynamic m
 
 ![Mesh Runtime Data](assets/vacollect_mesh_runtime.jpg){width=600px style="margin-top: 10px; margin-bottom: 5px;"}
 
-The Per Instance Custom Data system allows you to inject randomized or controlled float values into your instanced materials. This creates visual diversity across instances without the need for multiple materials or meshes.
+## Setup
+
+To set up your custom data, follow these steps:
+
+1. In your material, add a Per Instance Custom Data node
+2. When creating your first Custom Data node, assign it a Data Index of 10. Indices **0-9 are reserved for system functionality**. For each additional Custom Data node, increment the index value (11, 12, etc.).
+![Data Index](assets/va_material_dataindex.jpg){width=400px style="margin-top: 10px; margin-bottom: 5px;"}
+3. Add a ScalarParameter node and name it the name of your Custom Data. Plug the output into the PerInstanceCustomData node input.
+![Per Instance Data Node](assets/va_material_customdatanodes.jpg){width=800px style="margin-top: 10px; margin-bottom: 5px;"}
+4. In the VA Asset Collection Editor window, locate the **Mesh Runtime Data** section and add a new entry to the **Per Instance Custom Data** list.
+5. Enter the same Custom Data Name you used for the ScalarParameter in your material. Note that entries in this list correspond sequentially to Per Instance Custom Data Indices in the material itself: the first entry maps to Data Index 10, the second to Index 11, and so on.
+6. Define the variation range by setting minimum and maximum values in the Custom Float fields. Enable the checkbox below to round values to integers if needed.
+![Per Instance Data](assets/vacollect_custom_entry.jpg){width=800px style="margin-top: 10px; margin-bottom: 5px;"}
+7. Remember to **Reapply Custom Data** when you are done.
+![Reapply Custom Data](assets/va_reapply.jpg){width=800px style="margin-top: 10px; margin-bottom: 5px;"}
+
 
 ## Usage Examples
 
@@ -26,12 +41,6 @@ You can use custom data for various effects, such as:
 ## How It Works
 
 When the instance is spawned, each custom float parameter will generate a value within its specified range. These values can then be accessed within your material graphs to create unique variations for each instance.
-
-## Reapply Custom Data
-
-The VA Asset Editor provides a "Reapply Custom Data" button that enables you to inject custom float data into your instanced VA mesh. By modifying these values, you can create visual variations between instances, ensuring each character or object appears unique in your scene.
-
-> **Note:** Remember to click the Rebuild Asset button after making changes to custom data settings.
 
 ## See Also
 

@@ -14,12 +14,12 @@ nav:
     - About the Plugin: index.md
     - Quick Start Guide: quick-start.md
     - Workflow Overview: workflow-overview.md
-    - Assets:
+    - Asset Collections:
         - VA Asset Collection: va-asset-collection.md
         - VA Asset Editor: va-asset-editor.md
-        - VA Editor - Animation Settings: va-asset-editor-animation.md
-        - VA Editor - Mesh Settings: va-asset-editor-mesh.md
-        - VA Editor - Custom Data: va-asset-editor-custom-data.md
+        - Animation Settings: va-asset-editor-animation.md
+        - Mesh Settings: va-asset-editor-mesh.md
+        - Per Instance Custom Data: va-asset-editor-custom-data.md
     - Animation System:
         - VA Animation Player: va-animation-player.md
         - VA Animation Lists: vertex-anim-lists.md
