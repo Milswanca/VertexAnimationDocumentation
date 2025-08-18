@@ -18,8 +18,8 @@ graph TD
 
 > 1. Right-click your skeletal mesh in Content Browser
 > 2. Choose animation type:
->    - **Make Bone Animation**: While this method enables animation sharing between multiple meshes and accommodates more animations and vertices than Vertex Animation, it is not as performant. Best for memory-flexible projects where you need to share animations across different characters.
->    - **Make Vertex Animation**: This method is more performant with lower material costs but requires larger textures. Animations are unique per mesh and cannot be shared. Best for maximum FPS in crowd scenes.
+>     - **Make Bone Animation**: While this method enables animation sharing between multiple meshes and accommodates more animations and vertices than Vertex Animation, it is not as performant. Best for memory-flexible projects where you need to share animations across different characters.
+>     - **Make Vertex Animation**: This method is more performant with lower material costs but requires larger textures. Animations are unique per mesh and cannot be shared. Best for maximum FPS in crowd scenes.
 > 3. Select animations to include in your VA Asset Collection
 > 4. Click "Create Asset" and choose save location
 
@@ -27,13 +27,7 @@ graph TD
 
 ### What is a VA Asset Collection?
 
-> A VA Asset Collection is the core asset that stores all data required for vertex animations. It contains:
-> 
-> - Converted mesh data
-> - Animation sequences  
-> - Texture data for vertex positions
-> - Material references
-> - Runtime configuration
+> A VA Asset Collection is the core asset that stores all data required for vertex animations. Learn more about what it contains in the [VA Asset Collection](va-asset-collection.md) documentation.
 
 ## Step 2: Fix Materials
 

@@ -1,14 +1,10 @@
 # Vertex Animation Toolset for UE5
 
-The Vertex Animation Toolset converts Skeletal Mesh characters into Vertex Animation-based Static Meshes, significantly improving performance when rendering multiple animated characters.
+Convert skeletal mesh characters into high-performance vertex animations for rendering crowds and multiple animated characters. The toolset preserves animation quality while reducing CPU overhead and enabling efficient GPU-based rendering through mesh instancing.
 
 > **Important**: This plugin requires Unreal Engine 5.4 or above.
 
 ![Crowd Cheering](assets/Crowd_09.jpg){: style="display: block; margin: 0 auto; width: 85%; padding: 10px;"}
-
-## Overview
-
-This plugin addresses performance bottlenecks in scenes with multiple animated characters by converting skeletal animations to vertex animations. The conversion process preserves animation quality while reducing CPU overhead and enabling efficient GPU-based rendering through mesh instancing.
 
 ## Core Features
 
@@ -27,11 +23,10 @@ This plugin addresses performance bottlenecks in scenes with multiple animated c
 - **Sequencer Integration**: Use vertex animations in cinematic sequences and cutscenes
 
 ### Workflow Integration
-- Direct conversion from existing skeletal animations
-- Automatic material system integration
-- Built-in crowd management tools
-- Multiple character placement methods
-- Full Sequencer integration for cinematic control
+- Convert skeletal meshes with right-click menu
+- Automatic material fixes during conversion
+- Editor tools for placing and managing crowds
+- Timeline control through Sequencer
 
 ## Use Cases
 
@@ -61,6 +56,5 @@ The plugin is most effective for:
 
 ## To Get Started
 
-- Follow the [Quick Start Guide](quick-start.md) to begin implementing the Vertex Animation Toolset in your project
-- View the [Workflow Overview](workflow-overview.md) to understand how all components work together
+- Follow the [Getting Started](getting-started.md) guide to begin implementing the Vertex Animation Toolset in your project
 - Explore the [Troubleshooting](troubleshooting.md) page if you encounter any issues

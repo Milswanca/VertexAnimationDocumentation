@@ -7,17 +7,17 @@ This page details the animation-related settings in the VA Asset Editor, coverin
 
 The Animation Build Settings panel lets you manage your animation sequences and build options. Here you can edit the source animation list. Additional settings include options for texture generation quality and power-of-two padding optimization.
 
-> **Note:** Remember to click the Rebuild Asset button after making changes.
+**Note:** Remember to click the Rebuild Asset button after making changes.
 
 ## Animation Runtime Data
 ![Animation Runtime Data](assets/vacollect_anim_runtime.jpg){width=600px style="margin-top: 10px; margin-bottom: 5px;"}
 
 This section shows the read-only compiled animation data for each sequence, including:
 
-- Animation frame details (start frame, duration, frame rate)
-- Total frame count
-- Animation Bounds
-- Position and rotation/normal texture mappings
+> - Animation frame details (start frame, duration, frame rate)
+> - Total frame count
+> - Animation Bounds
+> - Position and rotation/normal texture mappings
 
 ## Animation Preview
 
