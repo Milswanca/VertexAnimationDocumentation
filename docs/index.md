@@ -20,14 +20,18 @@ This plugin addresses performance bottlenecks in scenes with multiple animated c
 5. [**Crowd Tools Editor Mode**:](crowd-tools-editor-mode.md) For visual management and configuration of character groups
 
 ### Vertex Animations
-- **Animation Types**: Choose between bone animations (enables sharing between meshes, ideal for memory-flexible projects) and vertex animations (reduces material costs, requires more texture memory, unique per mesh)
+- **Animation Types**:
+    - **Bone Animations**: Enables sharing between meshes, ideal for memory-flexible projects
+    - **Vertex Animations**: Reduces material costs, requires more texture memory, unique per mesh
 - **Blueprint Integration**: Program animation behavior using Blueprint-based control systems
+- **Sequencer Integration**: Use vertex animations in cinematic sequences and cutscenes
 
 ### Workflow Integration
 - Direct conversion from existing skeletal animations
 - Automatic material system integration
 - Built-in crowd management tools
 - Multiple character placement methods
+- Full Sequencer integration for cinematic control
 
 ## Use Cases
 
