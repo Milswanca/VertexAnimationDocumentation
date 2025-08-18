@@ -15,7 +15,7 @@ This plugin addresses performance bottlenecks in scenes with multiple animated c
 ### Main Components
 1. [**Vertex Anim Mesh Component**:](vertex-anim-mesh-component.md) For single-character implementations requiring individual control
 2. [**Vertex Anim Instanced Mesh Component**:](vertex-anim-instanced-mesh-component.md) For efficient rendering of multiple characters
-3. [**VA Anim Player**:](va-animation-player.md) For animation control and playback of individual instances
+3. [**VA Animation Player**:](va-animation-player.md) Internal system that manages animation playback through Animation Modes
 4. [**VA Asset Collection**:](va-asset-collection.md) Manages and stores all data required for vertex animations.  It serves as a container holding meshes, animations, and associated data
 5. [**Crowd Tools Editor Mode**:](crowd-tools-editor-mode.md) For visual management and configuration of character groups
 

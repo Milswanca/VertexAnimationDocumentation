@@ -13,7 +13,7 @@ A component that allows playback of a single instance of a VA Asset Collection. 
 ### Lists
 Animation Lists define the behavior of animations through Animation Logic classes. Each list can contain:
 
-- **Animation Logic Class**: Select the type of logic (e.g., VAAnimationListLogic_Sequence)
+- **Animation Logic Class**: Select the type of logic (e.g., UVAAnimationList_Sequence)
 - **Logic Settings**: Exposes the public fields of the selected Animation Logic class. For example:
     - Random Start Position
     - Random Start Animation

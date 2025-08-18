@@ -35,6 +35,7 @@ nav:
             - Grid Tool: crowd-tools-grid.md
             - Single Placement: crowd-tools-single.md
         - Keyboard Shortcuts: crowd-tools-keyboard-shortcuts.md
+    - Sequencer Integration: sequencer-integration.md
     - Troubleshooting: troubleshooting.md
 
 markdown_extensions:

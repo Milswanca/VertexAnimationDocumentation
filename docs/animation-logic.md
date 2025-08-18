@@ -14,7 +14,7 @@ Animation Logic classes work with [VA Animation Lists](vertex-anim-lists.md) to 
 ## Creating Custom Logic
 
 1. In the Content Browser, right-click and select Blueprint Class
-2. Select "VAAnimationListLogic" as the parent class
+2. Select "UVAAnimationList" as the parent class
 3. Name your Blueprint (e.g., "BP_IdleWalkLogic")
 4. Open the Blueprint and implement the desired behavior using the provided events
 

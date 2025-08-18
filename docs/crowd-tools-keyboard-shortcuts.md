@@ -6,33 +6,33 @@ This page outlines the keyboard shortcuts available when using the tools in Crow
 
 | Shortcut | Action |
 |----------|---------|
-| `Ctrl + Alt + Drag` | Marquee Select |
-| `Ctrl + G` | Snap to Ground |
-| `Ctrl + F` | Rotate Instances to Face Cursor |
-| `Alt + Move` | Duplicate Selected Instances |
+| `F` | Focus on Selected |
+| `Ctrl + D` | Deselect All |
+| `Ctrl + G` | Snap To Ground |
+| `Del` | Delete Selected |
+| `Alt + Move` | Duplicate |
 
 ## Paint Mode Shortcuts
 
 | Shortcut | Action |
 |----------|---------|
-| `Ctrl + Scroll` | Resize Brush Size |
+| `Ctrl + Scroll` | Resize Brush |
 | `Shift + Paint` | Erase |
 
 ## Single Placement Mode Shortcuts
 
 | Shortcut | Action |
 |----------|---------|
-| `Z` | Rotate Left |
-| `X` | Rotate Right |
-| `Ctrl + Scroll` | Resize Instance Size |
-| `V` | `Play Last Anim in List` |
-| `B` | `Plaay Next Anim in List` |
+| `Click + Drag` | Rotate & Place |
+| `Z` | Rotate Left (Hold) |
+| `X` | Rotate Right (Hold) |
+| `Ctrl + Scroll` | Resize Instance |
 
 ## Erase Mode Shortcuts
 
 | Shortcut | Action |
 |----------|---------|
-| `Ctrl + Scroll` | Resize Brush Size |
+| `Ctrl + Scroll` | Resize Brush |
 
 ## See Also
 
