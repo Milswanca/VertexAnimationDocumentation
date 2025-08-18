@@ -1,15 +1,13 @@
 /* Global variables */
 :root {
-    --doc-line-height: 1.6 !important;
-    --doc-letter-spacing: 0.02em !important;
-    --md-text-font: "Source Sans Pro", "Lato", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif !important;
+    --doc-line-height: normal !important;
+    --doc-letter-spacing: normal !important;
+    --md-text-font: "Roboto Serif", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif !important;
     --md-code-font: "Cascadia Code", Consolas, "Courier New", monospace !important;
 }
 
-/* Import Source Sans Pro font */
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
-/* Import Lato as backup */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+/* Import Roboto Serif font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700&display=swap');
 
 /* Remove focus outlines */
 :focus,
