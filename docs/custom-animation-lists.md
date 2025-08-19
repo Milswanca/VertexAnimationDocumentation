@@ -55,6 +55,31 @@ Animation Lists allow you to create reusable animation behaviors that can be app
 
 **Example**: For a detailed implementation example, see `Plugins/VertexAnimation/Content/DemoMap/Blueprints/SoccerGame/BP_SoccerFanAnimListLogic.uasset`
 
+## Instance Data System
+
+> Animation Lists can store custom data per instance, allowing each instance to maintain its own state and behavior parameters:
+
+### **Custom Struct Data**
+> Create custom struct types to store per-instance data that your Animation List logic can use:
+>
+> - **State Information**: Current behavior state, timers, counters
+> - **Randomization Data**: Random seeds, variation parameters
+> - **Logic Parameters**: Custom thresholds, triggers, or conditions
+> - **Behavior Memory**: Previous actions, history, or context
+
+### **Instance Data Functions**
+> Use these helper functions to manage per-instance data:
+>
+> - `SetInstanceAnimListData`: Store custom struct data for a specific instance
+> - `GetInstanceAnimListData`: Retrieve custom struct data from an instance  
+> - `ClearInstanceAnimListData`: Remove stored data from an instance
+
+![Set Instance Data](assets/custdata_set.jpg){width=600px style="margin-top: 10px; margin-bottom: 5px;"}
+
+![Get Instance Data](assets/custdata_get.jpg){width=600px style="margin-top: 10px; margin-bottom: 5px;"}
+
+This system enables complex per-instance behaviors like state machines, conditional logic, and persistent animation behaviors that vary between instances.
+
 ## Built-in Animation List Types
 
 > The plugin includes pre-built Animation List types you can use or extend:

@@ -49,6 +49,10 @@ The Vertex Animation Toolset integrates with Unreal Engine's Sequencer for cinem
 
 ![Disable Motion Blur](assets/motion_blur_zero.png){: style="display: block; margin: 0 auto; width: 85%; padding: 10px;"}
 
+---
+
+> **Note:** Sequencer integration is currently experimental and work-in-progress. Some features may be limited or subject to change in future updates.
+
 ## See Also
 
 - [VA Mesh Component](vertex-anim-mesh-component.md) - Component setup

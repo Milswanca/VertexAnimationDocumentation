@@ -58,6 +58,40 @@ The Vertex Animation Toolset provides helper functions that automatically manage
 > - **Animation List Index**: Which list slot to use in the component (the Animation List object must be pre-configured in the component at this index)
 > - **Override Saved Animation**: When true, saves this list assignment to the level so it persists across editor sessions and plays automatically on level load
 
+## Direct Mode Object Access
+
+![Get Animation Mode Object](assets/animmode_getanimmode.jpg){width=600px style="margin-top: 10px; margin-bottom: 5px;"}
+
+> For advanced control, you can get the animation mode object directly and call functions on specific instances:
+
+### **Getting Mode Objects**
+
+> Use these functions from the VA Component to access mode objects directly:
+>
+> - `GetAnimationModeObject` with `VAAnimationMode_Single` class - Returns the Single Mode object for direct function calls
+> - `GetAnimationModeObject` with `VAAnimationMode_AnimList` class - Returns the AnimList Mode object for direct function calls
+> - `GetAnimationModeObjectForInstance` with an Instance ID - Returns the mode object currently controlling that specific instance
+
+### **Direct Function Calls**
+
+> Once you have a mode object, you can call functions directly on specific instances:
+
+**Single Mode Functions:**
+> - `SetPlayRate`: Change animation speed for specific instances
+> - `SetPosition`: Jump to specific animation positions  
+> - `Pause` / `Resume`: Control playback state per instance
+> - `SetReverse`: Change animation direction for instances
+> - `StepForward` / `StepBackward`: Frame-by-frame control
+
+**AnimList Mode Functions:**
+> - `ChangeInstanceList`: Switch instances to different animation lists
+> - `GetInstanceList`: Query which list an instance is currently using
+> - `GetInstancesInList`: Get all instances using a specific animation list
+> - `GetInstanceListObject`: Get the Animation List object for an instance
+> - `GetAnimationListCollection`: Access the collection of available animation lists
+
+This approach provides the most granular control over individual instances and their animation behavior.
+
 ## Events and the Crowd System
 
 > The animation system includes a robust event system that's particularly powerful when used with the [Crowd Tools](crowd-tools-editor-mode.md). Events can be broadcast to all instances or specific subsets of your crowd, allowing you to make crowds react dynamically to gameplay events, level changes, or player actions.
