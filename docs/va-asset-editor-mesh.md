@@ -30,7 +30,7 @@ This panel displays runtime mesh properties and allows configuration of:
 
 ## See Also
 
-- [VA Asset Editor](va-asset-editor.md) - Main editor overview
+- [VA Asset Collection](va-asset-collection.md) - Main editor overview
 - [VA Editor - Animation Settings](va-asset-editor-animation.md) - Configure animation-related settings
 - [VA Editor - Custom Data](va-asset-editor-custom-data.md) - Configure per-instance custom data
 - [VA Mesh Component](vertex-anim-mesh-component.md) - Use VA Asset Collections with single characters

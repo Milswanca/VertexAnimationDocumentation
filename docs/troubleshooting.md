@@ -78,8 +78,8 @@ This guide helps you diagnose and resolve common issues you might encounter whil
 - [Quick Start Guide](quick-start.md) - Step-by-step guide to getting started
 - [VA Asset Collection](va-asset-collection.md) - Asset management and configuration
 - [VA Asset Editor](va-asset-editor.md) - Edit and configure your assets
-- [VA Animation Player](va-animation-player.md) - Animation control and playback
-- [VA Animation Logic](animation-logic.md) - Animation system details
+- [Animation Control](animation-control.md) - Animation control and playback
+- [Custom Animation Lists](custom-animation-lists.md) - Animation system details
 - [Crowd Tools Editor Mode](crowd-tools-editor-mode.md) - Editor interface overview
 
 ## Getting Help

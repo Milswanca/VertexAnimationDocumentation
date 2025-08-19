@@ -15,14 +15,12 @@ nav:
     - Getting Started: getting-started.md
     - Asset Collections:
         - VA Asset Collection: va-asset-collection.md
-        - VA Asset Editor: va-asset-editor.md
         - Animation Settings: va-asset-editor-animation.md
         - Mesh Settings: va-asset-editor-mesh.md
         - Per Instance Custom Data: va-asset-editor-custom-data.md
     - Animation System:
-        - VA Animation Player: va-animation-player.md
-        - VA Animation Lists: vertex-anim-lists.md
-        - VA Animation Logic: animation-logic.md
+        - Animation Control: animation-control.md
+        - Custom Animation Lists: custom-animation-lists.md
     - Components:
         - VA Mesh Component (Single): vertex-anim-mesh-component.md
         - VA Instanced Mesh Component (Multiple): vertex-anim-instanced-mesh-component.md

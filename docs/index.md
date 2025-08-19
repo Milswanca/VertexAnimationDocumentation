@@ -11,7 +11,7 @@ Convert skeletal mesh characters into high-performance vertex animations for ren
 ### Main Components
 1. [**Vertex Anim Mesh Component**:](vertex-anim-mesh-component.md) For single-character implementations requiring individual control
 2. [**Vertex Anim Instanced Mesh Component**:](vertex-anim-instanced-mesh-component.md) For efficient rendering of multiple characters
-3. [**VA Animation Player**:](va-animation-player.md) Internal system that manages animation playback through Animation Modes
+3. [**Animation System**:](animation-control.md) Manages animation playback through Single and AnimList modes
 4. [**VA Asset Collection**:](va-asset-collection.md) Manages and stores all data required for vertex animations.  It serves as a container holding meshes, animations, and associated data
 5. [**Crowd Tools Editor Mode**:](crowd-tools-editor-mode.md) For visual management and configuration of character groups
 

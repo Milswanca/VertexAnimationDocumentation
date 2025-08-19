@@ -42,6 +42,7 @@ To set up your custom data, follow these steps:
 
 ### Step 7: Reapply Custom Data
 > Remember to **Reapply Custom Data** when you are done.
+
 ![Reapply Custom Data](assets/va_reapply.jpg){width=800px style="margin-top: 10px; margin-bottom: 5px;"}
 
 
@@ -60,7 +61,7 @@ You can use custom data for various effects, such as:
 
 ## See Also
 
-- [VA Asset Editor](va-asset-editor.md) - Main editor overview
+- [VA Asset Collection](va-asset-collection.md) - Main editor overview
 - [VA Editor - Animation Settings](va-asset-editor-animation.md) - Configure animation-related settings
 - [VA Editor - Mesh Settings](va-asset-editor-mesh.md) - Configure mesh-related settings
 - [VA Instanced Mesh Component](vertex-anim-instanced-mesh-component.md) - Use VA Asset Collections with multiple characters

@@ -78,8 +78,8 @@ graph TD
 
 > Configure animations through:
 > 
-> - [Animation Lists](vertex-anim-lists.md): Organize animation sequences
-> - [Animation Logic](animation-logic.md): Define playback behavior
+> - [Animation Control](animation-control.md): Control animations with Single and AnimList modes
+> - [Custom Animation Lists](custom-animation-lists.md): Create custom animation behaviors
 > - [Sequencer Integration](sequencer-integration.md): Cinematic control
 
 ![Crowd Cheering](assets/Crowd_06.jpg){: style="display: block; margin: 0 auto; width: 85%; padding: 10px;"}
@@ -87,5 +87,5 @@ graph TD
 ## Next Steps
 
 > - [VA Asset Collection](va-asset-collection.md): Manage your animation assets
-> - [VA Asset Editor](va-asset-editor.md): Fine-tune asset settings
+> - [VA Asset Collection](va-asset-collection.md): Fine-tune asset settings
 > - [Troubleshooting](troubleshooting.md): Solve common issues

@@ -9,7 +9,7 @@ Tools for controlling how crowd elements are placed and configured in your scene
 > - **Shadow casting options:** Toggle shadow casting on the instances when they are placed in the level
 
 ## 2. Per Instance Animation Data
-> - **Animation List Logic:** Select and edit your Animation Logic settings. For more information see [Animation Logic](animation-logic.md)
+> - **Animation List Logic:** Select and edit your Animation List settings. For more information see [Custom Animation Lists](custom-animation-lists.md)
 
 ## 3. Painting Settings
 > - **Density (per 1Kuu):** Controls the number of instances placed within a 10m² area
@@ -55,4 +55,4 @@ There are three ways to create a brush asset.
 - [Grid Tool](crowd-tools-grid.md) - Use brushes with grid-based placement
 - [Single Placement](crowd-tools-single.md) - Use brushes with precise placement
 - [VA Asset Collection](va-asset-collection.md) - The asset type used by Crowd Brushes
-- [VA Animation Logic](animation-logic.md) - Define custom animation behaviors
+- [Custom Animation Lists](custom-animation-lists.md) - Define custom animation behaviors

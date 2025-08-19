@@ -29,8 +29,8 @@ The bottom panel provides standard timeline controls for previewing your animati
 
 ## See Also
 
-- [VA Asset Editor](va-asset-editor.md) - Main editor overview
+- [VA Asset Collection](va-asset-collection.md) - Main editor overview
 - [VA Editor - Mesh Settings](va-asset-editor-mesh.md) - Configure mesh-related settings
 - [VA Editor - Custom Data](va-asset-editor-custom-data.md) - Configure per-instance custom data
-- [VA Animation Player](va-animation-player.md) - Control animations in your VA Asset Collection
-- [VA Animation Lists](vertex-anim-lists.md) - Organize animations for playback
+- [Animation Control](animation-control.md) - Control animations in your VA Asset Collection
+- [Custom Animation Lists](custom-animation-lists.md) - Organize animations for playback
