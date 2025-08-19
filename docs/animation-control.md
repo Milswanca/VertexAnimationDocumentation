@@ -35,12 +35,12 @@ The Vertex Animation Toolset provides helper functions that automatically manage
 
 > Core functions available in Single Mode:
 > 
-> - **PlaySingleAnimation**: Start a specific animation
-> - **StopAnimation**: Stop the current animation
-> - **PauseAnimation**: Pause/resume playback
-> - **SetAnimationTime**: Jump to a specific point
-> - **SetAnimationSpeed**: Adjust playback rate
-> - **GetCurrentAnimation**: Query what's playing
+> - `PlaySingleAnimation`: Start a specific animation
+> - `StopAnimation`: Stop the current animation
+> - `PauseAnimation`: Pause/resume playback
+> - `SetAnimationTime`: Jump to a specific point
+> - `SetAnimationSpeed`: Adjust playback rate
+> - `GetCurrentAnimation`: Query what's playing
 
 ## Animation List Mode
 
