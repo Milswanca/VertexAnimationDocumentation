@@ -29,7 +29,7 @@ A specialized editor mode for placing and managing crowd instances in your Unrea
 
 ## See Also
 
-- [Workflow Overview](workflow-overview.md) - Understand how Crowd Tools fit into the overall process
+- [Getting Started](getting-started.md) - Understand how Crowd Tools fit into the overall process
 - [Crowd Brushes](crowd-brushes.md) - Detailed brush configuration
 - [Paint Tool](crowd-tools-paint.md) - Free-form brush-based placement
 - [Grid Tool](crowd-tools-grid.md) - Structured grid-based placement

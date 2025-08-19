@@ -55,7 +55,7 @@ The VA Mesh Component inherits from UStaticMeshComponent and uses a modular arch
 
 ## See Also
 
-- [Workflow Overview](workflow-overview.md) - Understand how components fit into the overall process
+- [Getting Started](getting-started.md) - Understand how components fit into the overall process
 - [VA Instanced Mesh Component](vertex-anim-instanced-mesh-component.md) - For managing multiple instances
 - [Animation Control](animation-control.md) - Control animations with Single and AnimList modes
 - [Custom Animation Lists](custom-animation-lists.md) - Create custom animation behaviors

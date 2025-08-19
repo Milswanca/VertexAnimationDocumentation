@@ -16,7 +16,7 @@ This component functions exactly like the [VA Mesh Component](vertex-anim-mesh-c
 For details on animation setup and control, refer to the [VA Mesh Component](vertex-anim-mesh-component.md) documentation, as both components share the same animation functionality.
 
 ## See Also
-- [Workflow Overview](workflow-overview.md) - Understand how components fit into the overall process
+- [Getting Started](getting-started.md) - Understand how components fit into the overall process
 - [Crowd Tools](crowd-tools-editor-mode.md) - Tools for managing crowd instances
 - [VA Mesh Component](vertex-anim-mesh-component.md) - For single instance usage
 - [Animation Control](animation-control.md) - Control animations in your component

@@ -82,8 +82,6 @@ graph TD
 > - [Custom Animation Lists](custom-animation-lists.md): Create custom animation behaviors
 > - [Sequencer Integration](sequencer-integration.md): Cinematic control
 
-![Crowd Cheering](assets/Crowd_06.jpg){: style="display: block; margin: 0 auto; width: 85%; padding: 10px;"}
-
 ## Next Steps
 
 > - [VA Asset Collection](va-asset-collection.md): Manage your animation assets

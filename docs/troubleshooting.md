@@ -37,7 +37,7 @@ This guide helps you diagnose and resolve common issues you might encounter whil
     ![Reduce Verts](assets/vertexdimensionreducevertices.jpg){ style="margin-top: 10px; margin-bottom: 5px;"}
     2. Reduce the number of animation frames
     ![Reduce Frames](assets/vertexdimensionreduceframes.jpg){ style="margin-top: 10px; margin-bottom: 5px;"}
-    3. Consider using a lower-poly version of your mesh for background characters or switch to bone mode when [creating your assets](quick-start.md).
+    3. Consider using a lower-poly version of your mesh for background characters or switch to bone mode when [creating your assets](getting-started.md).
     </div>
 
 ??? "VA Asset Collection file size is too large."
@@ -74,10 +74,8 @@ This guide helps you diagnose and resolve common issues you might encounter whil
 
 ## See Also
 
-- [Workflow Overview](workflow-overview.md) - Understand the complete plugin workflow
-- [Quick Start Guide](quick-start.md) - Step-by-step guide to getting started
+- [Getting Started](getting-started.md) - Step-by-step guide to getting started
 - [VA Asset Collection](va-asset-collection.md) - Asset management and configuration
-- [VA Asset Editor](va-asset-editor.md) - Edit and configure your assets
 - [Animation Control](animation-control.md) - Animation control and playback
 - [Custom Animation Lists](custom-animation-lists.md) - Animation system details
 - [Crowd Tools Editor Mode](crowd-tools-editor-mode.md) - Editor interface overview

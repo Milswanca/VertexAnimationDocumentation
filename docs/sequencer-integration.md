@@ -53,4 +53,4 @@ The Vertex Animation Toolset integrates with Unreal Engine's Sequencer for cinem
 
 - [VA Mesh Component](vertex-anim-mesh-component.md) - Component setup
 - [VA Asset Collection](va-asset-collection.md) - Managing animations
-- [Quick Start Guide](quick-start.md) - Getting started with the plugin
+- [Getting Started](getting-started.md) - Getting started with the plugin
