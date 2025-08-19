@@ -5,14 +5,14 @@ This page details the animation-related settings in the VA Asset Editor, coverin
 ## Animation Build Settings
 ![Animation Build Settings](assets/vacollect_anim_build.jpg){width=600px style="margin-top: 10px; margin-bottom: 5px;"}
 
-The Animation Build Settings panel lets you manage your animation sequences and build options. Here you can edit the source animation list. Additional settings include options for texture generation quality and power-of-two padding optimization.
+> The Animation Build Settings panel lets you manage your animation sequences and build options. Here you can edit the source animation list. Additional settings include options for texture generation quality and power-of-two padding optimization.
 
 **Note:** Remember to click the Rebuild Asset button after making changes.
 
 ## Animation Runtime Data
 ![Animation Runtime Data](assets/vacollect_anim_runtime.jpg){width=600px style="margin-top: 10px; margin-bottom: 5px;"}
 
-This section shows the read-only compiled animation data for each sequence, including:
+> This section shows the read-only compiled animation data for each sequence, including:
 
 > - Animation frame details (start frame, duration, frame rate)
 > - Total frame count
@@ -20,12 +20,11 @@ This section shows the read-only compiled animation data for each sequence, incl
 > - Position and rotation/normal texture mappings
 
 ## Animation Preview
+![Animation Timeline](assets/vaasset_animation_timeline.jpg){width=600px style="margin-top: 10px; margin-bottom: 5px;"}
 
-The timeline area in the VA Asset Editor displays your currently selected preview animation. You can switch between different animations to visualize how your asset will appear in-game.
-
-## Animation Timeline
-
-The bottom panel provides standard timeline controls for previewing your animations. Use these controls to play, pause, and scrub through your animation sequences.
+> The timeline area in the VA Asset Editor displays your currently selected preview animation. You can switch between different animations to visualize how your asset will appear in-game.
+>
+> The bottom panel provides standard timeline controls for previewing your animations. Use these controls to play, pause, and scrub through your animation sequences.
 
 ## See Also
 

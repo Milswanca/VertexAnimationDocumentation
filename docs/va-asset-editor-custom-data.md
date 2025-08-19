@@ -16,37 +16,49 @@ The Per Instance Custom Data system allows you to inject randomized or controlle
 
 To set up your custom data, follow these steps:
 
-### Step 1: Add Per Instance Custom Data Node
+### **Step 1: Add Per Instance Custom Data Node**
 > In your material, add a Per Instance Custom Data node
 
-### Step 2: Set Data Index
+### **Step 2: Set Data Index**
 > When creating your first Custom Data node, assign it a Data Index of 10. Indices **0-9 are reserved for system functionality so do not use these indices. Instead start at 10**. For each additional Custom Data node, increment the index value (11, 12, etc.).
 
 ![Data Index](assets/va_material_dataindex.jpg){width=400px style="margin-top: 10px; margin-bottom: 5px;"}
 
-### Step 3: Connect ScalarParameter
+### **Step 3: Connect ScalarParameter**
 > Add a ScalarParameter node and name it the name of your Custom Data. Plug the output into the PerInstanceCustomData node input.
 
 ![Per Instance Data Node](assets/va_material_customdatanodes.jpg){width=800px style="margin-top: 10px; margin-bottom: 5px;"}
 
-### Step 4: Add Entry in VA Asset Editor
+### **Step 4: Add Entry in VA Asset Editor**
 > In the VA Asset Collection Editor window, locate the **Mesh Runtime Data** section and add a new entry to the **Per Instance Custom Data** list.
 
-### Step 5: Configure Custom Data Entry
+### **Step 5: Configure Custom Data Entry**
 > Enter the same Custom Data Name you used for the ScalarParameter in your material. Note that entries in this list correspond sequentially to Per Instance Custom Data Indices in the material itself: the first entry maps to Data Index 10, the second to Index 11, and so on.
 
-### Step 6: Set Value Range
+### **Step 6: Set Value Range**
 > Define the variation range by setting minimum and maximum values in the Custom Float fields. Enable the checkbox below to round values to integers if needed.
 
 ![Per Instance Data](assets/vacollect_custom_entry.jpg){width=800px style="margin-top: 10px; margin-bottom: 5px;"}
 
-### Step 7: Reapply Custom Data
+### **Step 7: Reapply Custom Data**
 > Remember to **Reapply Custom Data** when you are done.
 
 ![Reapply Custom Data](assets/va_reapply.jpg){width=800px style="margin-top: 10px; margin-bottom: 5px;"}
 
 
 ## Usage Examples
+
+<div class="image-row" style="display: flex; gap: 10px; justify-content: center; align-items: center;">
+  <div style="text-align: center;">
+    <img src="../assets/custdata_var01.jpg" alt="Custom Data Variation 1" style="width: 200px; height: auto;">
+  </div>
+  <div style="text-align: center;">
+    <img src="../assets/custdata_var02.jpg" alt="Custom Data Variation 2" style="width: 200px; height: auto;">
+  </div>
+  <div style="text-align: center;">
+    <img src="../assets/custdata_var03.jpg" alt="Custom Data Variation 3" style="width: 200px; height: auto;">
+  </div>
+</div>
 
 You can use custom data for various effects, such as:
 

@@ -25,18 +25,16 @@ Double-click a VA Asset Collection to open the editor window where you can confi
 
 ![VA Asset Editor Interface](assets/vacollect_02.jpg){width="70%" style="margin-top: 10px;"}
 
-### Interface Elements
-
-#### 1. Rebuild Asset Button
+### **1. Rebuild Asset Button**
 > This button reconstructs your mesh and materials. Use this after making any adjustments in the details panel to ensure your changes are properly applied.
 
-#### 2. Preview Mesh Selection
+### **2. Preview Mesh Selection**
 > For Bone VA Asset Collections that contain multiple meshes, this dropdown menu allows you to switch between different meshes in the preview window. This is particularly useful when working with collections that include variations of the same character or object.
 
-#### 3. Reapply Custom Data
+### **3. Reapply Custom Data**
 > This button applies custom data changes to your materials. Custom data allows you to pass per-instance float values (like color variations, roughness, etc.) to materials for visual diversity between instances. See [Custom Data](va-asset-editor-custom-data.md) for setup instructions.
 
-#### 4. Details Panel
+### **4. Details Panel**
 > The right-side panel contains crucial settings divided into several categories:
 >
 > - **[Animation Settings](va-asset-editor-animation.md)**: Configure animation build options and view runtime animation data
@@ -45,13 +43,13 @@ Double-click a VA Asset Collection to open the editor window where you can confi
 >
 > These settings allow you to fine-tune various aspects of your vertex animation.
 
-#### 5. Animation Preview
+### **5. Animation Preview**
 > The timeline area displays your currently selected preview animation. You can switch between different animations to visualize how your asset will appear in-game.
 
-#### 6. Animation Timeline
+### **6. Animation Timeline**
 > The bottom panel provides standard timeline controls for previewing your animations. Use these controls to play, pause, and scrub through your animation sequences.
 
-**Remember to click "Rebuild Asset" after making changes to apply them.**
+Remember to click "Rebuild Asset" after making changes to apply them.
 
 ## Technical Details
 

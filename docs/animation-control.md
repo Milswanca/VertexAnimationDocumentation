@@ -9,7 +9,6 @@ The Vertex Animation Toolset provides helper functions that automatically manage
 > - **Single Mode**: Direct control of individual animations
 > - **AnimList Mode**: List-based animation sequences
 
-When you use the component's animation functions like `PlaySingleAnimation` or `PlayAnimationList`, the system automatically transitions between modes based on which function you call.
 
 ## Single Animation Mode
 
@@ -20,8 +19,6 @@ When you use the component's animation functions like `PlaySingleAnimation` or `
 > 3. Maintains this mode until you call a different animation function
 
 ![Play Single Animation](assets/playsingleanim.jpg){width=600px style="margin-top: 10px; margin-bottom: 5px;"}
-
-### Playing Single Animations
 
 > The `PlaySingleAnimation` function accepts:
 > 
@@ -34,7 +31,7 @@ When you use the component's animation functions like `PlaySingleAnimation` or `
 > - **Reverse**: Play the animation backwards
 > - **Override Saved Animation**: When true, saves this animation state to the level so it persists across editor sessions and plays automatically on level load
 
-### Single Animation Functions
+### All Available Functions
 
 > Core functions available in Single Mode:
 > 
@@ -55,8 +52,6 @@ When you use the component's animation functions like `PlaySingleAnimation` or `
 
 ![Play Animation List](assets/playanimlist.jpg){width=600px style="margin-top: 10px; margin-bottom: 5px;"}
 
-### Playing Animation Lists
-
 > The `PlayAnimationList` function accepts:
 > 
 > - **Instance ID / Instance IDs**: Single instance or array of instances to affect
@@ -67,7 +62,7 @@ When you use the component's animation functions like `PlaySingleAnimation` or `
 
 > The animation system includes a robust event system that's particularly powerful when used with the [Crowd Tools](crowd-tools-editor-mode.md). Events can be broadcast to all instances or specific subsets of your crowd, allowing you to make crowds react dynamically to gameplay events, level changes, or player actions.
 
-### Broadcasting Events
+### **Broadcasting Events**
 
 > **For Crowd Systems**: Events are broadcast through the AVACrowds parent actor to all crowd instances:
 
@@ -75,7 +70,7 @@ When you use the component's animation functions like `PlaySingleAnimation` or `
 
 > **For Non-Crowd Systems**: If you're using VA Mesh Component without the crowd tools, you'll need to implement your own event system to communicate with your Animation Lists.
 
-### Event Handling in Animation Lists
+### **Event Handling in Animation Lists**
 
 > Custom Animation Lists receive events by overriding the `CustomAnimationEvent` function. Here's an example:
 

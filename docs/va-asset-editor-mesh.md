@@ -8,10 +8,10 @@ This page details the mesh-related settings in the VA Asset Editor, covering bot
 The Mesh Build Settings control how your mesh assets are processed, featuring:
 
 > - Source mesh selection and configuration
-> - LOD and Nanite compatibility options
+> - LOD settings and Nanite compatibility option
 > - Material build settings with bone influence controls
-> - Animation and frame blending options
-> - The source materials list
+> - Frame blending and animation blending options
+> - Source materials list
 
 **Note:** Remember to click the Rebuild Asset button after making changes.
 

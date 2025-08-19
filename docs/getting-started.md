@@ -14,7 +14,7 @@ graph TD
     E --> D
 ```
 
-## Step 1: Create VA Asset
+### **Step 1: Create VA Asset**
 
 > 1. Right-click your skeletal mesh in Content Browser
 > 2. Choose animation type:
@@ -29,7 +29,7 @@ graph TD
 
 > A VA Asset Collection is the core asset that stores all data required for vertex animations. Learn more about what it contains in the [VA Asset Collection](va-asset-collection.md) documentation.
 
-## Step 2: Fix Materials
+### **Step 2: Fix Materials**
 
 > Since vertex animations work differently than skeletal animations, your materials need to be modified. A dialog will appear showing any material errors:
 
@@ -46,7 +46,7 @@ graph TD
 
 ![VA Asset Collection Result](assets/quick_4.png){style="margin-top: 10px; margin-bottom: 5px;"}
 
-## Step 3: Configure Asset (Optional)
+### **Step 3: Configure Asset (Optional)**
 
 > Double-click your VA Asset Collection to open the editor and adjust settings:
 > 
@@ -56,15 +56,12 @@ graph TD
 > 
 > Click "Rebuild Asset" after making changes to apply them.
 
-## Step 4: Choose Implementation
+### **Step 4: Choose Implementation**
 
-### Single Character
-> Use [VA Mesh Component](vertex-anim-mesh-component.md) for individual characters needing precise control
+> - **Single Character**: Use [VA Mesh Component](vertex-anim-mesh-component.md) for individual characters needing precise control
+> - **Multiple Characters**: Use [VA Instanced Mesh Component](vertex-anim-instanced-mesh-component.md) for crowds and multiple characters
 
-### Multiple Characters  
-> Use [VA Instanced Mesh Component](vertex-anim-instanced-mesh-component.md) for crowds and multiple characters
-
-## Step 5: Place Characters (Multiple Characters Only)
+### **Step 5: Place Characters (Multiple Characters Only)**
 
 > Use [Crowd Tools](crowd-tools-editor-mode.md) for easy placement:
 > 
@@ -74,7 +71,7 @@ graph TD
 
 ![Crowd Example](assets/Crowd_01.jpg){: style="display: block; margin: 0 auto; width: 85%; padding: 10px;"}
 
-## Step 6: Control Animations
+### **Step 6: Control Animations**
 
 > Configure animations through:
 > 
@@ -84,6 +81,6 @@ graph TD
 
 ## Next Steps
 
-> - [VA Asset Collection](va-asset-collection.md): Manage your animation assets
-> - [VA Asset Collection](va-asset-collection.md): Fine-tune asset settings
-> - [Troubleshooting](troubleshooting.md): Solve common issues
+- [VA Asset Collection](va-asset-collection.md): Manage your animation assets
+- [VA Asset Collection](va-asset-collection.md): Fine-tune asset settings
+- [Troubleshooting](troubleshooting.md): Solve common issues

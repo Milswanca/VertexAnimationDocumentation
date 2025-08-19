@@ -8,7 +8,6 @@ The VA Mesh Component inherits from UStaticMeshComponent and uses a modular arch
 
 ## Core Properties
 
-### Asset Reference
 > - **Vertex Animation Asset**: Select your VA Asset Collection containing the mesh and animation data
 > - **Vertex Animation Mesh Index**: Select which mesh to use from the asset collection (if it contains multiple meshes)
 > - **Custom Data Floats Hash**: Read-only property showing the hash of custom data configurations
@@ -23,10 +22,10 @@ The VA Mesh Component inherits from UStaticMeshComponent and uses a modular arch
 
 ## Animation Modes
 
-### Single Animation Mode
+### **Single Animation Mode**
 > Play individual animations directly from the VA Asset Collection. Use this mode when you need precise control over specific animations.
 
-### Animation List Mode  
+### **Animation List Mode**  
 > Play animations through Animation Lists that define playback behavior. Animation Lists can be:
 >
 > - **Sequential**: Play animations in order
@@ -45,11 +44,11 @@ The VA Mesh Component inherits from UStaticMeshComponent and uses a modular arch
 
 > Key Blueprint-callable functions for controlling animations:
 >
-> - **Play Single Animation**: Play a specific animation from the asset collection
-> - **Play Animation List**: Start playback using an animation list
-> - **Set Animation Asset**: Change the VA Asset Collection at runtime
-> - **Set Animation Mesh Index**: Switch between meshes in multi-mesh collections
-> - **Set Animation Mode**: Toggle between single and list animation modes
+> - `PlaySingleAnimation`: Play a specific animation from the asset collection
+> - `PlayAnimationList`: Start playback using an animation list
+> - `SetAnimationAsset`: Change the VA Asset Collection at runtime
+> - `SetAnimationMeshIndex`: Switch between meshes in multi-mesh collections
+> - `SetAnimationMode`: Toggle between single and list animation modes
 
 > These functions are provided by the Animation Mode Manager and Animation Lists systems.
 
