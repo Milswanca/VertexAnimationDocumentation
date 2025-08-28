@@ -20,7 +20,7 @@ To set up your custom data, follow these steps:
 > In your material, add a Per Instance Custom Data node
 
 ### **Step 2: Set Data Index**
-> When creating your first Custom Data node, assign it a Data Index of 10. Indices **0-9 are reserved for system functionality so do not use these indices. Instead start at 10**. For each additional Custom Data node, increment the index value (11, 12, etc.).
+> When creating your first Custom Data node, assign it a Data Index of 12. Indices **0-11 are reserved for system functionality so do not use these indices. Instead start at 12**. For each additional Custom Data node, increment the index value (13, 14, etc.).
 
 ![Data Index](assets/va_material_dataindex.jpg){width=400px style="margin-top: 10px; margin-bottom: 5px;"}
 
@@ -33,7 +33,7 @@ To set up your custom data, follow these steps:
 > In the VA Asset Collection Editor window, locate the **Mesh Runtime Data** section and add a new entry to the **Per Instance Custom Data** list.
 
 ### **Step 5: Configure Custom Data Entry**
-> Enter the same Custom Data Name you used for the ScalarParameter in your material. Note that entries in this list correspond sequentially to Per Instance Custom Data Indices in the material itself: the first entry maps to Data Index 10, the second to Index 11, and so on.
+> Enter the same Custom Data Name you used for the ScalarParameter in your material. Note that entries in this list correspond sequentially to Per Instance Custom Data Indices in the material itself: the first entry maps to Data Index 12, the second to Index 13, and so on.
 
 ### **Step 6: Set Value Range**
 > Define the variation range by setting minimum and maximum values in the Custom Float fields. Enable the checkbox below to round values to integers if needed.
