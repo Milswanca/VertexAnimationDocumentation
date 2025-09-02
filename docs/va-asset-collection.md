@@ -1,6 +1,6 @@
 # UVAAssetCollection
 
-The VA Asset Collection is the core asset type in the Vertex Animation Toolset that manages and stores all data required for vertex animations. It serves as a container that holds meshes, animations, and their associated data.
+The VA Asset Collection is the core asset type in the Vertex Animation Studio that manages and stores all data required for vertex animations. It serves as a container that holds meshes, animations, and their associated data.
 
 ![VA Asset Collection](assets/vaassetcollection.jpg){width="20%" style="margin-top: 10px;"}
 

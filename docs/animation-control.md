@@ -1,6 +1,6 @@
 # Animation Control
 
-The Vertex Animation Toolset provides helper functions that automatically manage animation modes and provide consistent control whether you're working with single characters or crowds.
+The Vertex Animation Studio provides helper functions that automatically manage animation modes and provide consistent control whether you're working with single characters or crowds.
 
 ## Architecture Overview
 

@@ -1,6 +1,6 @@
 # Sequencer Integration (WIP)
 
-The Vertex Animation Toolset integrates with Unreal Engine's Sequencer for cinematic control of vertex animations.
+The Vertex Animation Studio integrates with Unreal Engine's Sequencer for cinematic control of vertex animations.
 
 ## How to Use VA Animations in Sequencer
 

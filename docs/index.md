@@ -1,4 +1,4 @@
-# Vertex Animation Toolset for UE5
+# Vertex Animation Studio for UE5
 
 Convert skeletal mesh characters into high-performance vertex animations for rendering crowds and multiple animated characters. The toolset preserves animation quality while reducing CPU overhead and enabling efficient GPU-based rendering through mesh instancing.
 
@@ -56,5 +56,5 @@ The plugin is most effective for:
 
 ## To Get Started
 
-- Follow the [Getting Started](getting-started.md) guide to begin implementing the Vertex Animation Toolset in your project
+- Follow the [Getting Started](getting-started.md) guide to begin implementing the Vertex Animation Studio in your project
 - Explore the [Troubleshooting](troubleshooting.md) page if you encounter any issues
