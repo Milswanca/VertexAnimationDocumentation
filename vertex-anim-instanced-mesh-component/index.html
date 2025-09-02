@@ -1,0 +1,1410 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../vertex-anim-mesh-component/">
+      
+      
+        <link rel="next" href="../crowd-tools-editor-mode/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>VA Instanced Mesh Component (Multiple) - Vertex Animation Studio Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.bcfcd587.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="blue-grey">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#va-instanced-mesh-component" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Vertex Animation Studio Docs" class="md-header__button md-logo" aria-label="Vertex Animation Studio Docs" data-md-component="logo">
+      
+  <img src="../assets/icon_CrowdEditor_40x.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Vertex Animation Studio Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              VA Instanced Mesh Component (Multiple)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Vertex Animation Studio Docs" class="md-nav__button md-logo" aria-label="Vertex Animation Studio Docs" data-md-component="logo">
+      
+  <img src="../assets/icon_CrowdEditor_40x.png" alt="logo">
+
+    </a>
+    Vertex Animation Studio Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About the Plugin
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Asset Collections
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Asset Collections
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../va-asset-collection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VA Asset Collection
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../va-asset-editor-animation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Animation Settings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../va-asset-editor-mesh/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mesh Settings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../va-asset-editor-custom-data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Per Instance Custom Data
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Animation System
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Animation System
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../animation-control/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Animation Control
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../custom-animation-lists/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Custom Animation Lists
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Components
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Components
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vertex-anim-mesh-component/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VA Mesh Component (Single)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    VA Instanced Mesh Component (Multiple)
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    VA Instanced Mesh Component (Multiple)
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#component-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Component Types
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Component Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uvainstancedmeshcomponent" class="md-nav__link">
+    <span class="md-ellipsis">
+      UVAInstancedMeshComponent
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uvahierarchicalinstancedmeshcomponent" class="md-nav__link">
+    <span class="md-ellipsis">
+      UVAHierarchicalInstancedMeshComponent
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uvacrowdinstancedcomponent" class="md-nav__link">
+    <span class="md-ellipsis">
+      UVACrowdInstancedComponent
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#animation-sub-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Animation Sub-Components
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instance-data-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instance Data Management
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Instance Data Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#persistent-data-store" class="md-nav__link">
+    <span class="md-ellipsis">
+      Persistent Data Store
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transient-data-store" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transient Data Store
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#per-instance-data-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      Per-Instance Data Access
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#per-instance-animation-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      Per-Instance Animation Control
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Per-Instance Animation Control">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#individual-animation-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Individual Animation Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#batch-animation-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Batch Animation Operations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#animation-list-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Animation List Management
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance-optimizations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance Optimizations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Performance Optimizations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#efficient-instance-removal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Efficient Instance Removal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lod-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      LOD Support
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nanite-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nanite Integration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#see-also" class="md-nav__link">
+    <span class="md-ellipsis">
+      See Also
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Crowd Tools
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Crowd Tools
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../crowd-tools-editor-mode/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Editor Mode Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../crowd-brushes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Crowd Brushes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Placement Methods
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3">
+            <span class="md-nav__icon md-icon"></span>
+            Placement Methods
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../crowd-tools-paint/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Paint Tool
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../crowd-tools-grid/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Grid Tool
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../crowd-tools-single/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Single Placement
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../crowd-tools-keyboard-shortcuts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Keyboard Shortcuts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sequencer-integration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sequencer Integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#component-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Component Types
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Component Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uvainstancedmeshcomponent" class="md-nav__link">
+    <span class="md-ellipsis">
+      UVAInstancedMeshComponent
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uvahierarchicalinstancedmeshcomponent" class="md-nav__link">
+    <span class="md-ellipsis">
+      UVAHierarchicalInstancedMeshComponent
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uvacrowdinstancedcomponent" class="md-nav__link">
+    <span class="md-ellipsis">
+      UVACrowdInstancedComponent
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#animation-sub-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Animation Sub-Components
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instance-data-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instance Data Management
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Instance Data Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#persistent-data-store" class="md-nav__link">
+    <span class="md-ellipsis">
+      Persistent Data Store
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transient-data-store" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transient Data Store
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#per-instance-data-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      Per-Instance Data Access
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#per-instance-animation-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      Per-Instance Animation Control
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Per-Instance Animation Control">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#individual-animation-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Individual Animation Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#batch-animation-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Batch Animation Operations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#animation-list-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Animation List Management
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance-optimizations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance Optimizations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Performance Optimizations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#efficient-instance-removal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Efficient Instance Removal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lod-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      LOD Support
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nanite-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nanite Integration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#see-also" class="md-nav__link">
+    <span class="md-ellipsis">
+      See Also
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="va-instanced-mesh-component">VA Instanced Mesh Component</h1>
+<p>The VA Instanced Mesh Component provides efficient rendering and animation control for multiple instances of vertex-animated meshes. This component is essential for crowd scenarios, repeated environmental elements, and any situation requiring many animated meshes with optimized performance.</p>
+<h2 id="component-types">Component Types</h2>
+<blockquote>
+<p>The plugin provides three distinct instanced mesh components for different use cases:</p>
+</blockquote>
+<h3 id="uvainstancedmeshcomponent"><strong>UVAInstancedMeshComponent</strong></h3>
+<blockquote>
+<p>Basic instanced mesh component that inherits from <code>UInstancedStaticMeshComponent</code>. Best for simple multi-instance scenarios where you need basic instancing without advanced spatial organization.</p>
+</blockquote>
+<h3 id="uvahierarchicalinstancedmeshcomponent"><strong>UVAHierarchicalInstancedMeshComponent</strong></h3>
+<blockquote>
+<p>Advanced hierarchical version that inherits from <code>UHierarchicalInstancedStaticMeshComponent</code>. Provides spatial optimization for large numbers of instances through hierarchical organization. Use this for performance-critical scenarios with hundreds or thousands of instances.</p>
+</blockquote>
+<h3 id="uvacrowdinstancedcomponent"><strong>UVACrowdInstancedComponent</strong></h3>
+<blockquote>
+<p>Internal crowd system component that is automatically generated by the <a href="../crowd-tools-editor-mode/">Crowd Tools</a> when painting instances in Crowd Editor Mode. This component is not directly accessible in Blueprints - instead, it's created and managed behind the scenes when you use the crowd painting tools. Includes specialized features for crowd management, spatial queries, and editor integration.</p>
+</blockquote>
+<h2 id="core-properties">Core Properties</h2>
+<blockquote>
+<p>Each VA Instanced Mesh Component includes these essential properties:</p>
+<ul>
+<li><strong>Vertex Animation Asset</strong>: The VA Asset Collection containing mesh and animation data</li>
+<li><strong>Vertex Animation Mesh Index</strong>: Which mesh to use from the asset collection (for multi-mesh collections)</li>
+<li><strong>Custom Data Floats Hash</strong>: Read-only validation hash for custom data configurations</li>
+</ul>
+</blockquote>
+<h2 id="animation-sub-components">Animation Sub-Components</h2>
+<blockquote>
+<p>The VA Instanced Mesh Component uses a modular architecture with specialized sub-components:</p>
+<ul>
+<li><strong>Animation Lists Collection</strong>: Manages multiple animation lists for complex behaviors</li>
+<li><strong>Animation Mode Manager</strong>: Controls animation modes (Single vs AnimList)</li>
+<li><strong>Animation Player</strong>: Handles the actual animation playback</li>
+<li><strong>Instance Data Stores</strong>: Manage both persistent and runtime animation data per instance</li>
+</ul>
+</blockquote>
+<h2 id="instance-data-management">Instance Data Management</h2>
+<blockquote>
+<p>The component uses a sophisticated dual data store system:</p>
+</blockquote>
+<h3 id="persistent-data-store"><strong>Persistent Data Store</strong></h3>
+<blockquote>
+<p>Saves instance-specific animation states that persist across editor sessions and level reloads. This includes saved animation assignments and custom animation parameters.</p>
+</blockquote>
+<h3 id="transient-data-store"><strong>Transient Data Store</strong></h3>
+<blockquote>
+<p>Manages runtime-only instance data for performance optimization. This data is recreated each session and doesn't persist to disk.</p>
+</blockquote>
+<h3 id="per-instance-data-access"><strong>Per-Instance Data Access</strong></h3>
+<blockquote>
+<p>Each instance can have individual animation settings, custom data values, and animation states managed independently through the data store system.</p>
+</blockquote>
+<h2 id="per-instance-animation-control">Per-Instance Animation Control</h2>
+<blockquote>
+<p>Unlike basic static mesh components, VA Instanced Mesh Components provide granular per-instance animation control:</p>
+</blockquote>
+<h3 id="individual-animation-functions"><strong>Individual Animation Functions</strong></h3>
+<blockquote>
+<ul>
+<li><code>PlayAnimation</code>: Start specific animations on selected instances</li>
+<li><code>SetAnimationPlayRate</code>: Control playback speed per instance  </li>
+<li><code>PauseAnimation</code> / <code>ResumeAnimation</code>: Pause and resume individual instances</li>
+<li><code>SetAnimationPosition</code>: Jump to specific animation times per instance</li>
+<li><code>StopAnimation</code>: Stop animations on specific instances</li>
+</ul>
+</blockquote>
+<h3 id="batch-animation-operations"><strong>Batch Animation Operations</strong></h3>
+<blockquote>
+<ul>
+<li><code>BatchUpdateInstancesTransforms</code>: Efficiently update multiple instance transforms</li>
+<li><code>BatchUpdateInstancesData</code>: Bulk update instance animation data</li>
+<li><code>ChangeInstanceList</code>: Switch instances between different animation lists</li>
+</ul>
+</blockquote>
+<h3 id="animation-list-management"><strong>Animation List Management</strong></h3>
+<blockquote>
+<ul>
+<li><code>GetInstancesInList</code>: Query which instances are using specific animation lists</li>
+<li><code>SetInstanceAnimListData</code> / <code>GetInstanceAnimListData</code>: Manage per-instance animation list data</li>
+</ul>
+</blockquote>
+<h2 id="performance-optimizations">Performance Optimizations</h2>
+<h3 id="efficient-instance-removal"><strong>Efficient Instance Removal</strong></h3>
+<blockquote>
+<p>The component uses <code>SetRemoveSwap()</code> for optimized instance removal that maintains performance when dynamically adding/removing instances from large collections.</p>
+</blockquote>
+<h3 id="lod-support"><strong>LOD Support</strong></h3>
+<blockquote>
+<p>When not using Nanite-enabled VA Asset Collections, the component supports automatic LOD switching based on distance for optimal performance with large instance counts.</p>
+</blockquote>
+<h3 id="nanite-integration"><strong>Nanite Integration</strong></h3>
+<blockquote>
+<p>For Nanite-enabled assets, includes <code>ExtraWPONaniteAllowance</code> property for world position offset compatibility with Nanite virtualized geometry.</p>
+</blockquote>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../getting-started/">Getting Started</a> - Understand how components fit into the overall process</li>
+<li><a href="../crowd-tools-editor-mode/">Crowd Tools</a> - Tools for placing and managing crowd instances</li>
+<li><a href="../vertex-anim-mesh-component/">VA Mesh Component</a> - For single instance usage</li>
+<li><a href="../animation-control/">Animation Control</a> - Understanding animation modes and control</li>
+<li><a href="../custom-animation-lists/">Custom Animation Lists</a> - Create custom animation behaviors</li>
+<li><a href="../va-asset-collection/">VA Asset Collection</a> - The asset type used by this component</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+    
+  </body>
+</html>

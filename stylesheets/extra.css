@@ -1,0 +1,490 @@
+/* Global variables */
+:root {
+    --doc-line-height: normal !important;
+    --doc-letter-spacing: normal !important;
+    --md-text-font: "Roboto Serif", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif !important;
+    --md-code-font: "Cascadia Code", Consolas, "Courier New", monospace !important;
+}
+
+/* Import Roboto Serif font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700&display=swap');
+
+/* Remove focus outlines */
+:focus,
+:focus-visible,
+:focus-within,
+*:focus,
+*:focus-visible,
+*:focus-within,
+[tabindex]:focus,
+[tabindex]:focus-visible,
+[tabindex]:focus-within {
+    outline: none !important;
+    box-shadow: none !important;
+    -webkit-tap-highlight-color: transparent !important;
+}
+
+/* Search styling */
+.md-search__input {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: rgba(255, 255, 255, 0.87) !important;
+}
+
+.md-search__input:focus {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border-color: rgba(129, 212, 250, 0.3) !important;
+}
+
+.md-search__input::placeholder {
+    color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.md-search__icon {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.md-search__icon:hover {
+    color: rgba(255, 255, 255, 0.87) !important;
+}
+
+.md-search-result__meta {
+    background-color: rgba(29, 42, 58, 0.6) !important;
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.md-search-result__article {
+    background-color: rgba(29, 42, 58, 0.3) !important;
+}
+
+.md-search-result__article:hover {
+    background-color: rgba(29, 42, 58, 0.6) !important;
+}
+
+/* Apply fonts globally */
+body {
+    font-family: var(--md-text-font);
+}
+
+code {
+    font-family: var(--md-code-font);
+}
+
+/* Header styling */
+.md-header__title,
+.md-header__title .md-header__topic,
+.md-header__title .md-header__topic:first-child {
+    font-weight: 500 !important;
+    font-variation-settings: 'wght' 500 !important;
+}
+
+/* Header styling */
+.md-header {
+    box-shadow: 0 2px 12px rgba(0,0,0,0.2) !important;
+}
+
+.md-header,
+.md-tabs {
+    background-color: #2c3e50 !important;
+    border-bottom: 1px solid rgba(129, 212, 250, 0.1) !important;
+}
+
+/* Enhanced text contrast and readability */
+[data-md-color-scheme="slate"] {
+    --md-default-fg-color: rgba(255, 255, 255, 0.87) !important;
+    --md-default-fg-color--light: rgba(255, 255, 255, 0.87) !important;
+    --md-typeset-color: rgba(255, 255, 255, 0.87) !important;
+    background: linear-gradient(145deg, #243447 0%, #1e2a3a 100%) fixed !important;
+}
+
+/* Active section indicator */
+.md-nav__item--active {
+    border-left: none !important;
+    margin-left: -0.6rem !important;
+    padding-left: 0.4rem !important;
+    background: linear-gradient(90deg, rgba(129, 212, 250, 0.8) 0%, rgba(129, 212, 250, 0.1) 2px, transparent 100%) !important;
+}
+
+.md-nav__link[aria-expanded="true"],
+.md-nav__link--active,
+.md-nav__link:active,
+.md-nav__link:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Remove dark backgrounds from navigation */
+.md-nav {
+    background: none !important;
+}
+
+.md-nav__title {
+    background: none !important;
+    color: #eceff1 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+}
+
+.md-nav__item {
+    background: none !important;
+}
+
+/* Adjust navigation title spacing */
+.md-nav__title {
+    margin: 0 0 0.5em !important;
+    font-size: 1em !important;
+    line-height: normal !important;
+    opacity: 0.7 !important;
+}
+
+/* Body text styling */
+.md-typeset {
+    font-size: .73rem !important; /* Increased for better readability */
+    line-height: var(--doc-line-height);
+}
+
+.md-typeset p {
+    margin: 0.7em 0 !important;
+    letter-spacing: var(--doc-letter-spacing);
+    line-height: var(--doc-line-height);
+}
+
+
+/* Enhanced header hierarchy */
+.md-typeset h1 {
+    font-size: 24px !important; /* Increased for better readability */
+    color: #eceff1 !important;
+    font-weight: 400 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    padding-bottom: 0.3em !important;
+    margin-top: 0 !important;
+    margin-bottom: 0.4em !important;
+    line-height: 1.4 !important;
+}
+
+/* Adjust top content spacing */
+.md-content {
+    padding-top: 0.5rem !important;
+}
+
+.md-main__inner {
+    margin-top: 0.5rem !important;
+}
+
+.md-typeset h2 {
+    font-size: 22px !important; /* Increased for better readability */
+    color: rgba(255, 255, 255, 1) !important;
+    font-weight: 500 !important;
+    margin-top: 1.0em !important;
+    margin-bottom: 0.6em !important;
+    line-height: 1.3 !important;
+}
+
+.md-typeset h3 {
+    font-size: 17px !important; /* Increased for better readability */
+    color: rgba(255, 255, 255, 0.85) !important;
+    font-weight: 400 !important;
+    margin-top: 1em !important;
+    margin-bottom: 0.7em !important;
+    line-height: 1.3 !important;
+}
+
+.md-typeset h4, .md-typeset h5, .md-typeset h6 {
+    font-size: 16px !important; /* Increased for better readability */
+    color: #eceff1 !important;
+    font-weight: 400 !important;
+    margin-top: 1em !important;
+    margin-bottom: 0.6em !important;
+    line-height: 1.3 !important;
+}
+
+/* Links with better contrast */
+.md-content a {
+    color: #81d4fa !important;
+}
+
+.md-content a:hover {
+    color: #b3e5fc !important;
+    text-decoration: underline !important;
+}
+
+/* Code blocks with better contrast */
+.md-typeset code {
+    background-color: rgba(29, 42, 58, 0.6) !important;
+    color: #ffab91 !important;
+    line-height: var(--doc-line-height);
+    padding: 0.2em 0.4em !important;
+    border-radius: 3px !important;
+    margin: 0 0.2em !important;
+    backdrop-filter: blur(8px) !important;
+    box-shadow: 0 0 15px rgba(29, 42, 58, 0.3) !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Center images */
+.md-typeset img {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 90% !important;
+    border-radius: 4px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Adjust content width for better readability */
+.md-grid {
+    max-width: 58rem !important;
+}
+
+/* Navigation with better contrast */
+.md-nav__link {
+    color: rgba(255, 255, 255, 0.75) !important;
+    line-height: normal !important;
+    padding: 0.01em 0 !important;
+    font-size: 0.65rem !important; /* Smaller than main body text */
+    transition: color 0.2s ease-out, text-shadow 0.2s ease-out !important;
+    outline: none !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+
+.md-nav__link:focus,
+.md-nav__link:focus-visible,
+.md-nav__link:focus-within {
+    outline: none !important;
+    box-shadow: none !important;
+    -webkit-tap-highlight-color: transparent !important;
+}
+
+/* Main navigation spacing */
+.md-nav--primary > .md-nav__list > .md-nav__item {
+    margin-bottom: 0.2em !important;
+}
+
+.md-nav--primary > .md-nav__list > .md-nav__item:last-child {
+    margin-bottom: 0 !important;
+}
+
+.md-nav__item .md-nav__link--active {
+    margin-bottom: 0.1em !important;
+}
+
+.md-nav__item .md-nav {
+    margin-left: 1em !important;
+    margin-top: 0.1em !important;
+}
+
+/* Table of contents styling */
+.md-nav--secondary .md-nav__title {
+    font-size: 0.65rem !important; /* Smaller than main body text */
+    font-weight: 500 !important;
+    color: #eceff1 !important;
+    opacity: 0.9 !important;
+    margin-bottom: 0.5em !important;
+}
+
+.md-nav--secondary > .md-nav__list > .md-nav__item {
+    margin-bottom: 0.2em !important;
+}
+
+.md-nav--secondary > .md-nav__list > .md-nav__item:last-child {
+    margin-bottom: 0 !important;
+}
+
+.md-nav__link:hover {
+    color: #eceff1 !important;
+    text-shadow: 0 0 8px rgba(236, 239, 241, 0.2) !important;
+}
+
+.md-nav__item--active > .md-nav__link {
+    color: #81d4fa !important;
+    font-weight: 500 !important;
+    text-shadow: 0 0 8px rgba(129, 212, 250, 0.2) !important;
+}
+
+.md-nav__item {
+    padding: 0.1em 0 !important;
+    margin: 0 !important;
+}
+
+/* List formatting improvements */
+.md-typeset ul {
+    margin-left: 1.2em !important;
+    margin-top: 0.5em !important;
+    margin-bottom: 0.5em !important;
+}
+
+.md-typeset ul li {
+    margin-bottom: 0.4em !important;
+    padding-left: 0.5em !important;
+    position: relative !important;
+    letter-spacing: var(--doc-letter-spacing);
+    line-height: var(--doc-line-height);
+}
+
+.md-typeset ul li:last-child {
+    margin-bottom: 0 !important;
+}
+
+/* Ensure list items with strong text break properly */
+.md-typeset ul li strong {
+    display: inline-block !important;
+}
+
+/* Add spacing after italicized questions */
+.md-typeset em {
+    display: block !important;
+    margin: 0.5em 0 !important;
+    line-height: var(--doc-line-height);
+}
+
+/* Nested content indentation */
+.md-typeset ul li p {
+    margin: 0.2em 0 0 0 !important;
+    line-height: var(--doc-line-height);
+    letter-spacing: var(--doc-letter-spacing);
+}
+
+/* List item description spacing */
+.md-typeset ul li p + p {
+    margin-top: 0.2em !important;
+}
+
+/* Adjust list item markers */
+.md-typeset ul li::marker {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Hide footer */
+.md-footer-meta {
+    display: none !important;
+}
+
+/* Center Mermaid diagrams */
+.mermaid {
+    display: flex !important;
+    justify-content: center !important;
+    margin: 1.5em auto !important;
+    max-width: 90% !important;
+}
+
+/* Center tables */
+.md-typeset table {
+    display: table !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 90% !important;
+    margin-top: 1.5em !important;
+    margin-bottom: 1.5em !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Custom styling for details/summary boxes */
+.md-typeset details {
+    position: relative !important;
+    border: 1px solid rgba(129, 212, 250, 0.2) !important;
+    background: linear-gradient(145deg, rgba(29, 42, 58, 0.4) 0%, rgba(29, 42, 58, 0.3) 100%) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+    margin: 0.8em 0 !important;
+    padding: 0 !important;
+    font-size: inherit !important;
+    border-radius: 6px !important;
+    transition: all 0.2s ease-out !important;
+}
+
+.md-typeset details:hover {
+    border-color: rgba(129, 212, 250, 0.3) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+.md-typeset details > summary {
+    position: relative !important;
+    background: linear-gradient(145deg, rgba(41, 58, 80, 0.8) 0%, rgba(29, 42, 58, 0.8) 100%) !important;
+    border-bottom: 1px solid rgba(129, 212, 250, 0.2) !important;
+    padding: 1em !important;
+    padding-right: 2.5em !important;
+    margin: 0 !important;
+    cursor: pointer !important;
+    font-weight: 500 !important;
+    outline: none !important;
+    list-style: none !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Remove default markers and Material theme elements */
+.md-typeset details > summary::marker,
+.md-typeset details > summary::-webkit-details-marker,
+.md-typeset details > summary::before,
+.md-typeset details > summary > .twemoji,
+.md-typeset details > summary > .md-button,
+.md-typeset details > summary > .md-icon,
+.md-typeset details > summary > svg {
+    display: none !important;
+}
+
+/* Add plus/minus indicator */
+.md-typeset details > summary::after {
+    content: "+" !important;
+    position: absolute !important;
+    right: 1em !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    font-size: 1.2em !important;
+    font-weight: 400 !important;
+    opacity: 0.7 !important;
+}
+
+.md-typeset details[open] > summary::after {
+    content: "−" !important;
+}
+
+/* Style answer content */
+.md-typeset details > .md-typeset__answer {
+    padding: 1em 1.3em !important;
+    margin: 0 !important;
+    background: linear-gradient(145deg, rgba(29, 42, 58, 0.2) 0%, rgba(29, 42, 58, 0.15) 100%) !important;
+    border-radius: 0 0 6px 6px !important;
+    color: rgba(255, 255, 255, 0.87) !important;
+}
+
+/* Hover effect */
+.md-typeset details > summary:hover {
+    background: linear-gradient(145deg, rgba(41, 58, 80, 0.9) 0%, rgba(29, 42, 58, 0.9) 100%) !important;
+}
+
+/* Active state */
+.md-typeset details[open] {
+    border-color: rgba(129, 212, 250, 0.3) !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2) !important;
+}
+
+.md-typeset details[open] > summary {
+    border-bottom-color: rgba(129, 212, 250, 0.3) !important;
+}
+
+/* Custom blockquote styling for indentation */
+.md-typeset blockquote {
+    margin-left: 2em !important;
+    padding-left: 1em !important;
+    border-left: 3px solid rgba(129, 212, 250, 0.3) !important;
+    background-color: rgba(29, 42, 58, 0.2) !important;
+    padding: 1em !important;
+    border-radius: 4px !important;
+    margin-bottom: 1em !important;
+    color: rgba(255, 255, 255, 0.87) !important;
+    font-style: normal !important;
+}
+
+.md-typeset blockquote p {
+    margin: 0.5em 0 !important;
+}
+
+/* Left-align images inside blockquotes */
+.md-typeset blockquote img {
+    margin-top: 25px !important;
+    margin-bottom: 25px !important;
+    margin-left: 40px !important;
+    margin-right: auto !important;
+}
