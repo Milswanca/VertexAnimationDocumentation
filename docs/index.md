@@ -1,6 +1,6 @@
 # Vertex Animation Studio for UE5
 
-Convert skeletal mesh characters into high-performance vertex animations for rendering crowds and multiple animated characters. The toolset preserves animation quality while reducing CPU overhead and enabling efficient GPU-based rendering through mesh instancing.
+Convert skeletal mesh characters into high-performance vertex animations for rendering crowds and multiple animated characters. Vertex Animation Studio preserves animation quality while reducing CPU overhead and enabling efficient GPU-based rendering through mesh instancing.
 
 > **Important**: This plugin requires Unreal Engine 5.4 or above.
 
@@ -50,7 +50,7 @@ The plugin is most effective for:
 ### Development
 - Compatible with UE 5.4 and above
 - Flexible animation management
-- Integrated editor toolset
+- Integrated editor tools
 
 ![Crowd Cheering](assets/Crowd_06.jpg){: style="display: block; margin: 0 auto; width: 85%; padding: 10px;"}
 

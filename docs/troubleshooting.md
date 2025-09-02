@@ -1,6 +1,6 @@
 # Troubleshooting
 
-This guide helps you diagnose and resolve common issues you might encounter while using the VAT Toolset Plugin.
+This guide helps you diagnose and resolve common issues you might encounter while using Vertex Animation Studio.
 
 ??? "Why are my animations playing slow?"
     <div class="md-typeset__answer">
